@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quadro de funcionarios</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <main>
+            <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Tempo de empresa</th>
+                        <th>
+                            <select name="cargo" id="cargo" required>
+                                <option selected value="standart">Função</option>
+                                <option value="recepcionista">Recepcionista</option>
+                                <option value="manobrista">Manobrista</option>
+                                <option value="camareira">Camareira</option>
+                                <option value="gerente">Gerente</option>
+                                <option value="zelador">Zelador</option>
+                                <option value="cozinheira">Cozinheira(o)</option>
+                                <option value="cheff">Cheff</option>
+                                <option value="administradora">
+                                    Administrador(a)
+                                </option>
+                                <option value="seguranca">Segurança</option>
+                            </select>
+                        </th>
+                        <th>Recepção</th>
+                        <th>Restaurante</th>
+                        <th>Garçom</th>
+                        <th>Serviço de quarto</th>
+                        <th>Gêrencia</th>
+                        <th>Concierge</th>
+                        <th>Supervisor de setor</th>
+                        <th>
+                            <label for="ferias">Férias:</label>
+                            <input type="radio" name="ferias" id="feriasSim">Sim
+                            <input type="radio" name="ferias" id="feriasNao">Não
+                        </th>
+                        <th>
+                            <label for="afastamento">Afastamento Médico:</label>
+                            <input type="radio" name="afastamento" id="afastamentoSim">Sim
+                            <input type="radio" name="afastamento" id="afastamentoNao">Não
+                        </th>
+                    </tr>
+                <!---------------------------------------------------------------------------->
+                <tr>
+                    <td>
+                        <input type="number" name="code" id="code" placeholder="código">
+                    </td>
+                    <td>
+                        <input type="text" name="nome" id="nome">
+                    </td>
+                    <td>
+                        <input type="number" name="tempoDeCasa" id="tempoDeCasa">
+                    </td>
+                    <td>
+                        <select name="cargo" id="cargo" required>
+                            <option selected value="standart">Função</option>
+                            <option value="recepcionista">Recepcionista</option>
+                            <option value="manobrista">Manobrista</option>
+                            <option value="camareira">Camareira</option>
+                            <option value="gerente">Gerente</option>
+                            <option value="zelador">Zelador</option>
+                            <option value="cozinheira">Cozinheira(o)</option>
+                            <option value="cheff">Cheff</option>
+                            <option value="administradora">
+                                Administrador(a)
+                            </option>
+                            <option value="seguranca">Segurança</option>
+                        </select>
+                    </td>
+                    <td>Status 6</td>
+                    <td>Status 7</td>
+                    <td>Status 8</td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
