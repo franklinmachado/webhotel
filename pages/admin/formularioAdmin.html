@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <form name="loginFuncionario" action="" method="post">
+            <div>
+                <label for="codigo">Código</label>
+                <input type="text" id="codigo" name="codigo" />
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" />
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <form name="cadastroFuncionario" action="" method="post">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required />
+                </div>
+                <div>
+                    <label for="data_de_nascimento">Data de nascimento</label>
+                    <input
+                        type="date"
+                        name="data_de_nascimento"
+                        id="data_de_nascimento"
+                    />
+                </div>
+                <div>
+                    <label for="foto">Foto</label>
+                    <input type="file" name="foto" id="foto" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações profissionais</legend>
+                <div>
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo" required />
+                </div>
+                <div>
+                    <label for="lista_cargos">Cargos</label>
+                    <select name="cargo" id="lista_cargos">
+                        <optgroup label="Hotel">
+                            <option value="recepcionista">Recepcionista</option>
+                            <option value="gerente">Gerente</option>
+                            <option value="camareira">Camareira</option>
+                            <option value="concierge">Concierge</option>
+                        </optgroup>
+                        <optgroup label="Restaurante">
+                            <option value="chef">Chef de cozinha</option>
+                            <option value="cozinheiro">Cozinheiro</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="data_de_inicio">Data de admissão</label>
+                    <input
+                        type="date"
+                        name="data_de_inicio"
+                        id="data_de_inicio"
+                    />
+                </div>
+                <div>
+                    <label for="supervisor">Supervisor</label>
+                    <input
+                        type="text"
+                        id="supervisor"
+                        name="supervisor"
+                        required
+                    />
+                </div>
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
+</html>
