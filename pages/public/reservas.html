@@ -8,56 +8,53 @@
     </head>
     <body>
         <header>
-            <img src="../../images/logoColorida.svg" alt="logo montanha" height="80">
+            <img
+                src="../../images/logoColorida.svg"
+                alt="logo montanha"
+                height="80"
+            />
             <nav>
-            <p>
-                <a href="index.html">Página Principal</a>
-                &nbsp;&nbsp;
-                <a href="sobre.html">Nosso Hotel</a>
-                &nbsp;&nbsp;
-                <a href="acomodacoes.html">Acomodações</a>
-                &nbsp;&nbsp;
-                <a href="login.html">Login</a>
-                &nbsp;&nbsp;
-                <a href="contato.html">Contato</a>
-            </p>
+                <li></li>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Nosso Hotel</a></li>
+                <li><a href="acomodacoes.html">Acomodações</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </nav>
         </header>
 
         <main>
             <section>
                 <h1>Faça sua reserva</h1>
-
-                <article>
-                    <form action="" method="get">
-                        <br />
-                        <h3>Formulário de reserva</h3>
-                        <fieldset>
-                            <legend>
-                                Para solicitar sua reserva, por favor preencha
-                                os campos abaixo:
-                            </legend>
-                            <h3>Seus dados</h3>
-                            <p>
-                                <label for="nome">Nome Completo</label><br />
+                <form action="" method="get">
+                    <h3>Formulário de reserva</h3>
+                    <fieldset>
+                        <legend>
+                            Para solicitar sua reserva, por favor preencha os
+                            campos abaixo:
+                        </legend>
+                        <h3>Seus dados</h3>
+                        <ul>
+                            <li>
+                                <label for="nome">Nome Completo</label>
                                 <input
                                     type="text"
                                     name="nome"
                                     id="nome"
                                     required
                                 />
-                            </p>
-                            <p>
-                                <label for="email">E-mail</label><br />
+                            </li>
+                            <li>
+                                <label for="email">E-mail</label>
                                 <input
                                     type="email"
                                     name="email"
                                     id="email"
                                     required
                                 />
-                            </p>
-                            <p>
-                                <label for="celular">Celular</label><br />
+                            </li>
+                            <li>
+                                <label for="celular">Celular</label>
                                 <input
                                     type="tel"
                                     name="celular"
@@ -65,53 +62,50 @@
                                     placeholder="(DDD) + número "
                                     required
                                 />
-                            </p>
-                            <p>
-                                <label for="cidade">Cidade</label><br />
+                            </li>
+                            <li>
+                                <label for="cidade">Cidade</label>
                                 <input
                                     type="text"
                                     name="cidade"
                                     id="cidade"
                                     required
                                 />
-                            </p>
-                            <p>
-                                <label for="estado">Estado</label><br />
+                            </li>
+                            <li>
+                                <label for="estado">Estado</label>
                                 <input
                                     type="text"
                                     name="estado"
                                     id="estado"
                                     required
                                 />
-                            </p>
-                            <br />
-                            <hr />
+                            </li>
 
+                            <hr />
                             <h3>Estadia</h3>
-                            <p>
-                                <label for="checkin">Data do Checkin</label
-                                ><br />
+                            <li>
+                                <label for="checkin">Data do Checkin</label>
                                 <input
                                     type="date"
                                     name="checkin"
                                     id="checkin"
                                     required
                                 />
-                            </p>
-                            <p>
-                                <label for="checkout">Data do Checkout</label
-                                ><br />
+                            </li>
+                            <li>
+                                <label for="checkout">Data do Checkout</label>
                                 <input
                                     type="date"
                                     name="checkout"
                                     id="checkout"
                                     required
                                 />
-                            </p>
-                            <p>
+                            </li>
+                            <li>
                                 <label for="adultos"
                                     >Quantidade de adultos</label
-                                ><br />
+                                >
                                 <input
                                     type="number"
                                     name="adultos"
@@ -120,9 +114,16 @@
                                     max="4"
                                     value="0"
                                 />
-                            </p>
-                            <p>
-                                <laberl for="Número de Crianças"><strong>Número de <abbr title="Menor que 12 anos">Crianças</abbr></strong></laberl><br>
+                            </li>
+                            <li>
+                                <laberl for="Número de Crianças"
+                                    ><strong
+                                        >Número de
+                                        <abbr title="Menor que 12 anos"
+                                            >Crianças</abbr
+                                        ></strong
+                                    ></laberl
+                                >
                                 <input
                                     type="number"
                                     name="criancas"
@@ -132,23 +133,26 @@
                                     value="0"
                                     required
                                 />
-                            </p>
+                            </li>
                             <button type="submit">Enviar</button>
-                        </fieldset>
-                    </form>
-                </article>
+                        </ul>
+                    </fieldset>
+                </form>
             </section>
         </main>
-        <hr>
+        <hr />
         <footer>
-    <nav>
-        <ul>
-            <a href="contato.html">Contato</a>
-            &nbsp;&nbsp;
-            <a href="../admin/homeadm.html">Central do Administrador</a>
-        </ul>
-    </nav>
-    <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
-</footer>
+            <nav>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="../admin/homeadm.html"
+                            >Central do Administrador</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
     </body>
 </html>
