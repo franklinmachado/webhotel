@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 :root {
     --background-primario-claro: #fffef5;
     --background-claro-secundario: #fdeecc;
@@ -10,17 +17,6 @@
     --cor-secundaria: #606c38;
     --cor-apoio: #fac75c;
     --cor-apoio-claro: #fadea3;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: var(--background-primario-claro);
-    color: var(--cor-letra-escura);
-}
-
-h1,
-h2,
-h3 {
-    color: var(--cor-destaque)
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
