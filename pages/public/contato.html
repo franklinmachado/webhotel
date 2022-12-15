@@ -1,53 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
-</head>
-<body>
-    <header>
-        <h1>Formulário de Contato</h1>
-    </header>
-    <div>
-        <form action="" method="post">
-            <fieldset>
-                <legend>Preencha todos os campos</legend>
-                <br/>
-                <div>
-                    <label for="nome"><b>Nome Completo</b></label><br/>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                </div>
-                <br/>
-                <div>
-                    <label for="email"><b>Email</b></label><br/>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-                </div>
-                <br/>
-                <div>
-                    <label for="telefone"><b>Telefone</b></label><br/>
-                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
-                </div>
-                <br/>
-                <div>
-                    <label for="assunto"><b>Assunto</b></label> <br/>
-                    <select name="assunto" id="assunto">
-                        <option selected disabled value="">Selecione</option>
-                        <option>Cancelamento de Reserva</option>
-                        <option>Ouvidoria</option>
-                        <option>Departamento Financeiro</option>
-                    </select>
-                </div>
-                	<br/>
-                <div>
-                    <label for="msg"><b>Mensagem</b></label><br/>
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem:"></textarea>
-                </div>
-                <br/>
-                <button>Enviar</button>
-            </fieldset>
-        </form>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário de Contato</title>
+    </head>
+    <body>
+        <header>
+            <img src="" alt="" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Preencha todos os campos</legend>
+                    <br />
+                    <div>
+                        <label for="nome"><b>Nome Completo</b></label
+                        ><br />
+                        <input
+                            type="text"
+                            name="nome"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="email"><b>Email</b></label
+                        ><br />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Digite seu email"
+                            required
+                        />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="telefone"><b>Telefone</b></label
+                        ><br />
+                        <input
+                            type="text"
+                            name="telefone"
+                            id="telefone"
+                            placeholder="Digite seu telefone"
+                            required
+                        />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="assunto"><b>Assunto</b></label> <br />
+                        <select name="assunto" id="assunto">
+                            <option selected disabled value="">
+                                Selecione
+                            </option>
+                            <option>Cancelamento de Reserva</option>
+                            <option>Ouvidoria</option>
+                            <option>Departamento Financeiro</option>
+                        </select>
+                    </div>
+                    <br />
+                    <div>
+                        <label for="msg"><b>Mensagem</b></label
+                        ><br />
+                        <textarea
+                            name="msg"
+                            id="msg"
+                            cols="30"
+                            rows="10"
+                            placeholder="Digite sua mensagem:"
+                        ></textarea>
+                    </div>
+                    <br />
+                    <button>Enviar</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li>
+                        <a href="../admin/homeadm.html">Administração</a>
+                    </li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
+    </body>
 </html>

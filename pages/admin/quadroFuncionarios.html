@@ -8,1165 +8,278 @@
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body>
-        <main>
-            <table>
-                <tr>
-                    <th>Código</th>
-                    <th>Nome</th>
-                    <th>Tempo de empresa</th>
-                    <th>Função</th>
-                    <th>Recepção</th>
-                    <th>Restaurante</th>
-                    <th>Garçom</th>
-                    <th>Serviço de quarto</th>
-                    <th>Gêrencia</th>
-                    <th>Concierge</th>
-                    <th>Supervisor de setor</th>
-                    <th>Férias</th>
-                    <th>Afastamento Médico</th>
-                </tr>
-                <!---------------------------------------------------------------------------->
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input
-                            type="number"
-                            name="code"
-                            id="code"
-                            placeholder="código"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="number"
-                            name="tempoDeCasa"
-                            id="tempoDeCasa"
-                            placeholder="Tempo de casa"
-                        />
-                    </td>
-                    <td>
-                        <select name="cargo" id="cargo" required>
-                            <option selected value="standart">Função</option>
-                            <option value="recepcionista">Recepcionista</option>
-                            <option value="manobrista">Manobrista</option>
-                            <option value="camareira">Camareira</option>
-                            <option value="gerente">Gerente</option>
-                            <option value="zelador">Zelador</option>
-                            <option value="cozinheira">Cozinheira(o)</option>
-                            <option value="cheff">Cheff</option>
-                            <option value="administradora">
-                                Administrador(a)
-                            </option>
-                            <option value="seguranca">Segurança</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="recepcao"
-                            id="recepcao"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="restaurante"
-                            id="restaurante"
-                            placeholder="xxxx-xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="garagem"
-                            id="garagem"
-                            placeholder="xxxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="tel"
-                            name="servicoQuarto"
-                            id="servicoQuarto"
-                            placeholder="xxxx"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="gerencia"
-                            id="gerencia"
-                            placeholder="Gerente"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="concierge"
-                            id="concierge"
-                            placeholder="Concierge"
-                        />
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="supervisorDeSetor"
-                            id="supervisorDeSetor"
-                            placeholder="Supervisor de Setor"
-                        />
-                    </td>
-                    <td>
-                        <input type="radio" name="ferias" id="feriasSim" />Sim
-                        <input type="radio" name="ferias" id="feriasNao" />Não
-                    </td>
-                    <td>
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoSim"
-                        />Sim
-                        <input
-                            type="radio"
-                            name="afastamento"
-                            id="afastamentoNao"
-                        />Não
-                    </td>
-                </tr>
-            </table>
-        </main>
+        <header>
+            <img src="" alt="" />
+            <nav>
+                <ul>
+                    <li><a href="../public/index.html">Home</a></li>
+                    <li><a href="../public/contato.html">Contato</a></li>
+                    <li><a href="../public/sobre.html">Sobre</a></li>
+                    <li><a href="../public/reservas.html">Reservas</a></li>
+                    <li><a href="../public/acomodacoes.html">Acomodações</a></li>
+                    <li><a href="../public/login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--header-->>
+
+<main>
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Tempo de Empresa</th>
+            <th>Atividade Atual</th>
+            <th>Férias</th>
+            <th>Afastamento Médico</th>
+        </tr>
+        <tr>
+            <td>11548752</td>
+            <td>Alexandro Lima Mangabeira</td>
+            <td>1 ano</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_1" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_1" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_1" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_1" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>22653587</td>
+            <td>David Lucas Nascimento dos Santos</td>
+            <td>1 mês</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_2" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_2" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_2" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_2" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>33541889</td>
+            <td>Edlaine Nunes D Oliveira</td>
+            <td>1 anoe e meio</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_3" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_3" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_3" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_3" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>66547845</td>
+            <td>Franklin Machado dos Santos</td>
+            <td>3 ano</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_4" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_4" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_4" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_4" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>99586412</td>
+            <td>João Vitor Santana Pereira</td>
+            <td>2 anos</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_5" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_5" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_5" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_5" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>44581875</td>
+            <td>Lucas Almeira Campos</td>
+            <td>5 meses</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_6" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_6" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_6" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_6" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>33267914</td>
+            <td>Kaue Cardinalli</td>
+            <td>3 ano</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_7" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_7" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_7" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_7" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>66895114</td>
+            <td>Mariana</td>
+            <td>1 ano e meio</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_8" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_8" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_8" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_8" id="afastamento_sim">Sim
+            </td>
+        </tr>
+        <tr>
+            <td>66895210</td>
+            <td>Vitor rodrigues</td>
+            <td>9 meses</td>
+            <td>
+                <select name="" id="tempo_de_atividade">
+                    <option value="default">Função</option>
+                    <option value="recepcao">Recepção</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="garagem">Garagem</option>
+                    <option value="servico_de_quarto">Serviço de quarto</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="concierge">Congierge</option>
+                    <option value="supervisor_de_setor">Supervisor de setor</option>
+                </select>
+            </td>
+            <td>
+                <input checked required type="radio" name="ferias_id_9" id="ferias_nao">Não
+                <input type="radio" name="ferias_id_9" id="ferias_sim">Sim
+            </td>
+            <td>
+                <input checked required type="radio" name="afastamento_medico_id_9" id="afastamento_nao">Não
+                <input type="radio" name="afastamento_medico_id_9" id="afastamento_sim">Sim
+            </td>
+        </tr>
+
+    </table>
+</main>
+
+
+
+
+<!--footer-->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="../public/index.html">Home</a></li>
+                    <li><a href="../public/contato.html">Contato</a></li>
+                    <li><a href="../public/sobre.html">Sobre</a></li>
+                    <li><a href="../public/reservas.html">Reservas</a></li>
+                    <li><a href="../public/acomodacoes.html">Acomodações</a></li>
+                    <li>
+                        <a href="homeadm.html">Administração</a>
+                    </li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
     </body>
 </html>
