@@ -1,0 +1,26 @@
+:root {
+    --background-primario-claro: #fffef5;
+    --background-claro-secundario: #fdeecc;
+    --background-escuro: #283618;
+    --cor-letra-escura: #283618;
+    --cor-letra-clara: #fffef5;
+    --cor-principal: #364420;
+    --cor-destaque: #c4972e;
+    --cor-link: #f9af15;
+    --cor-secundaria: #606c38;
+    --cor-apoio: #fac75c;
+    --cor-apoio-claro: #fadea3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--background-primario-claro);
+    color: var(--cor-letra-escura);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--cor-destaque)
+}
+
