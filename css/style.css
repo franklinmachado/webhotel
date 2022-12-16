@@ -1,12 +1,5 @@
 * {
-<<<<<<< HEAD
     font-family: Montserrat, arial, sans-serif;
-=======
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
->>>>>>> 9b40874e80001ac359876f0fcb7b7f58cec11c80
 }
 
 :root {
@@ -21,7 +14,6 @@
     --cor-secundaria: #606c38;
     --cor-apoio: #fac75c;
     --cor-apoio-claro: #fadea3;
-<<<<<<< HEAD
 }
 
 /* HEADER*/
@@ -34,7 +26,7 @@ header {
 }
 
 nav {
-    padding: 10px;
+    padding: 5px;
     color: var(--cor-letra-clara);
     margin: auto;
     background-color: var(--background-escuro);
@@ -61,6 +53,8 @@ nav a:hover {
 }
 
 ul {
+    font-size: 1em;
+    font-weight: 600;
     align-items: center;
     padding: 1.2em;
     gap: 1.8em;
@@ -77,6 +71,13 @@ ul {
     background-color: var(--background-primario-claro);
     margin: auto;
     padding: 15px;
+    height: 10em;
+}
+
+.logoFooter {
+    margin: auto;
+    padding: 15px;
+    height: 5em;
 }
 
 /* BODY */
@@ -108,6 +109,27 @@ h3 {
     margin: 0 auto;
 }
 
+/* FOOTER */
+
+footer nav {
+    display: flex;
+    color: var(--cor-letra-clara);
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.social {
+    width: 32px;
+    color: var(--background-primario-claro);
+}
+
+.copyright {
+    text-align: center;
+    padding: 0 0 1em 0;
+    
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
@@ -121,8 +143,3 @@ h3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-=======
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
->>>>>>> 9b40874e80001ac359876f0fcb7b7f58cec11c80
