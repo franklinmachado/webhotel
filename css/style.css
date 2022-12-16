@@ -1,5 +1,12 @@
 * {
+<<<<<<< HEAD
     font-family: Montserrat, arial, sans-serif;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+>>>>>>> 9b40874e80001ac359876f0fcb7b7f58cec11c80
 }
 
 :root {
@@ -14,6 +21,7 @@
     --cor-secundaria: #606c38;
     --cor-apoio: #fac75c;
     --cor-apoio-claro: #fadea3;
+<<<<<<< HEAD
 }
 
 /* HEADER*/
@@ -113,3 +121,8 @@ h3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+=======
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+>>>>>>> 9b40874e80001ac359876f0fcb7b7f58cec11c80
