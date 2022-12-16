@@ -1,3 +1,7 @@
+* {
+    font-family: Montserrat, arial, sans-serif;
+}
+
 :root {
     --background-primario-claro: #fffef5;
     --background-claro-secundario: #fdeecc;
@@ -10,7 +14,71 @@
     --cor-secundaria: #606c38;
     --cor-apoio: #fac75c;
     --cor-apoio-claro: #fadea3;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER*/
+
+header {
+    display: block;
+    color: var(--cor-letra-clara);
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    color: var(--cor-letra-clara);
+    margin: auto;
+    background-color: var(--background-escuro);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--cor-letra-clara);
+    cursor: pointer;
+    --s: 0.1em;
+    --c: var(--cor-destaque);
+    padding-bottom: var(--s);
+    background: linear-gradient(90deg, var(--c) 50%, #000 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    --_p: 100%;
+}
+
+ul {
+    align-items: center;
+    padding: 1.2em;
+    gap: 1.8em;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+/* LOGO */
+
+.logo {
+    width: 100%;
+    background-color: var(--background-primario-claro);
+    margin: auto;
+    padding: 15px;
+}
+
+/* BODY */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -21,6 +89,27 @@ body {
 h1,
 h2,
 h3 {
-    color: var(--cor-destaque)
+    color: var(--cor-destaque);
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
