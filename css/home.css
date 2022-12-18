@@ -1,0 +1,75 @@
+main {
+    width: 1280px;
+    margin: auto;
+}
+
+.h2__title {
+    padding-left: 2rem;
+    margin: 2rem;
+}
+
+.h2__title__sobre {
+    text-align: center;
+    color: var(--cor-letra-clara);
+    background-color: var(--background-escuro);
+    padding: 1rem 0;
+}
+
+.chale__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3%;
+}
+
+.chale__image img {
+    max-width: 520px;
+    padding: 2rem;
+    border-radius: 40px;
+}
+
+.chale__text p {
+    max-width: 40ch;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 0;
+    margin-right: 180px;
+}
+
+.sobre__flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sobre__flex img {
+    width: 340px;
+    margin-left: 45px;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.sobre__text {
+    width: 80ch;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+}
+
+.gastronomia_container{
+    display: flex;
+}
+
+.gastronomia_image img {
+    width: 280px;
+    padding: 2rem;
+    border-radius: 40px;
+}
+
+.gastronomia_text {
+    width: 60ch;
+    padding: 2rem 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+footer {
+    margin-top: 100px;
+}

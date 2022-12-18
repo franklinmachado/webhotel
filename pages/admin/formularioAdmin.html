@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário administrativo</title>
+    </head>
+    <header>
+        <img
+            src="../../images/logoColorida.svg"
+            alt="logo montanha"
+            height="80"
+        />
+        <nav>
+            <ul>
+                <li><a href="../public/index.html">Página pricipal</a></li>
+                <li><a href="../public/sobre.html">Sobre</a></li>
+                <li><a href="../public/acomodacoes.html">Acomodações</a></li>
+                <li><a href="../public/reservas.html">Reservas</a></li>
+                <li><a href="../public/login.html">Login</a></li>
+                <li><a href="../public/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <form name="loginFuncionario" action="" method="post">
+            <div>
+                <label for="codigo">Código</label>
+                <input type="text" id="codigo" name="codigo" />
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" />
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <form name="cadastroFuncionario" action="" method="post">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required />
+                </div>
+                <div>
+                    <label for="data_de_nascimento">Data de nascimento</label>
+                    <input
+                        type="date"
+                        name="data_de_nascimento"
+                        id="data_de_nascimento"
+                    />
+                </div>
+                <div>
+                    <label for="foto">Foto</label>
+                    <input type="file" name="foto" id="foto" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações profissionais</legend>
+                <div>
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo" required />
+                </div>
+                <div>
+                    <label for="lista_cargos">Cargos</label>
+                    <select name="cargo" id="lista_cargos">
+                        <optgroup label="Hotel">
+                            <option value="recepcionista">Recepcionista</option>
+                            <option value="gerente">Gerente</option>
+                            <option value="camareira">Camareira</option>
+                            <option value="concierge">Concierge</option>
+                        </optgroup>
+                        <optgroup label="Restaurante">
+                            <option value="chef">Chef de cozinha</option>
+                            <option value="cozinheiro">Cozinheiro</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="data_de_inicio">Data de admissão</label>
+                    <input
+                        type="date"
+                        name="data_de_inicio"
+                        id="data_de_inicio"
+                    />
+                </div>
+                <div>
+                    <label for="supervisor">Supervisor</label>
+                    <input
+                        type="text"
+                        id="supervisor"
+                        name="supervisor"
+                        required
+                    />
+                </div>
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="homeadm.html">Administração principal</a></li>
+                    <li>
+                        <a href="quadroFuncionarios.html"
+                            >Quadro de Funcionarios</a
+                        >
+                    </li>
+                    <li>
+                        <a href="reservasadmim.html">Administração reserva</a>
+                    </li>
+                    <li>
+                        <a href="admiHospedes.html">Administração hospedes</a>
+                    </li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
+    </body>
+</html>

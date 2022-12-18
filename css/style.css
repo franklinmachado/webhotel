@@ -1,0 +1,145 @@
+* {
+    font-family: Montserrat, arial, sans-serif;
+}
+
+:root {
+    --background-primario-claro: #fffef5;
+    --background-claro-secundario: #fdeecc;
+    --background-escuro: #283618;
+    --cor-letra-escura: #283618;
+    --cor-letra-clara: #fffef5;
+    --cor-principal: #364420;
+    --cor-destaque: #c4972e;
+    --cor-link: #f9af15;
+    --cor-secundaria: #606c38;
+    --cor-apoio: #fac75c;
+    --cor-apoio-claro: #fadea3;
+}
+
+/* HEADER*/
+
+header {
+    display: block;
+    color: var(--cor-letra-clara);
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    padding: 5px;
+    color: var(--cor-letra-clara);
+    margin: auto;
+    background-color: var(--background-escuro);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--cor-letra-clara);
+    cursor: pointer;
+    --s: 0.1em;
+    --c: var(--cor-destaque);
+    padding-bottom: var(--s);
+    background: linear-gradient(90deg, var(--c) 50%, #000 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    --_p: 100%;
+}
+
+ul {
+    font-size: 1em;
+    font-weight: 600;
+    align-items: center;
+    padding: 1.2em;
+    gap: 1.8em;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+/* LOGO */
+
+.logo {
+    width: 100%;
+    background-color: var(--background-primario-claro);
+    margin: auto;
+    padding: 15px;
+    height: 10em;
+}
+
+.logoFooter {
+    margin: auto;
+    padding: 15px;
+    height: 5em;
+}
+
+/* BODY */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-primario-claro);
+    color: var(--cor-letra-escura);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--cor-destaque);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer nav {
+    display: flex;
+    color: var(--cor-letra-clara);
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.social {
+    width: 32px;
+    color: var(--background-primario-claro);
+}
+
+.copyright {
+    text-align: center;
+    padding: 0 0 1em 0;
+    
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

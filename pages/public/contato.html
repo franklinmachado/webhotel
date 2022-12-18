@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário de Contato</title>
+    </head>
+    <body>
+        <header>
+            <img
+                src="../../images/logoColorida.svg"
+                alt="logo montanha"
+                height="80"
+            />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="sobre.html">Nosso Hotel</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Preencha todos os campos</legend>
+
+                    <ul>
+                        <li>
+                            <label for="nome"><b>Nome Completo</b></label
+                            ><br />
+                            <input
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Digite seu nome"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="email"><b>Email</b></label
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Digite seu email"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="telefone"><b>Telefone</b></label
+                            >
+                            <input
+                                type="text"
+                                name="telefone"
+                                id="telefone"
+                                placeholder="Digite seu telefone"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="assunto"><b>Assunto</b></label> <br />
+                            <select name="assunto" id="assunto">
+                                <option selected disabled value="">
+                                    Selecione
+                                </option>
+                                <option>Cancelamento de Reserva</option>
+                                <option>Ouvidoria</option>
+                                <option>Departamento Financeiro</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="msg"><b>Mensagem</b></label
+                            ><br />
+                            <textarea
+                                name="msg"
+                                id="msg"
+                                cols="30"
+                                rows="10"
+                                placeholder="Digite sua mensagem:"
+                            ></textarea>
+                        </li>
+                        <button>Enviar</button>
+                    </ul>
+                </fieldset>
+            </form>
+        </main>
+        <hr />
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="../admin/homeadm.html">Central do Administrador</a></li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
+    </body>
+</html>

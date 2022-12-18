@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tela Cadastro</title>
+    </head>
+
+    <body>
+        <header>
+            <img
+                src="../../images/logoColorida.svg"
+                alt="logo montanha"
+                height="80"
+            />
+            <nav>
+                <li>
+                    <a href="index.html">Página Principal</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Nosso Hotel</a>
+                </li>
+                <li>
+                    <a href="acomodacoes.html">Acomodações</a>
+                </li>
+                <li>
+                    <a href="reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </nav>
+        </header>
+
+        <br />
+        <main>
+            <form action="index.html" >  <!--precisa do metodo!-->
+                <ul>
+                    <li>
+                        <label>Nome Completo</label>
+                        <input
+                            type="text"
+                            name="nomeCompleto"
+                            id="nomeCompleto"
+                        />
+                    </li>
+                    <li>
+                        <label> Email </label> <br />
+                        <input type="email" name="email" id="email" />
+                    </li>
+                    <li>
+                        <label>Senha</label>
+                        <input type="password" name="senha" id="senha" />
+                    </li>
+                    <li>
+                        <label>Confirmar Senha</label> <br />
+                        <input type="password" name="confirmarsenha" />
+                    </li>
+                    <li>
+                        <label>CPF</label> <br />
+                        <input type="text" name="cpf" id="cpf" />
+                    </li>
+                    <li>
+                        <label>Telefone</label> <br />
+                        <input type="text" name="telefone" id="telefone" />
+                    </li>
+                    <li>
+                        <label>Data de Nascimento</label> <br />
+                        <input type="date" name="date" id="date" />
+                    </li>
+                    <li>
+                        <label>CEP</label> <br />
+                        <input type="text" name="cep" id="cep" />
+                    </li>
+                </ul>
+                <a href="login.html"><button>Voltar</button></a>
+                <button type="submit">Finalizar</button>
+            </form>
+        </main>
+        <hr />
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="../admin/homeadm.html"
+                            >Central do Administrador</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </footer>
+    </body>
+</html>
