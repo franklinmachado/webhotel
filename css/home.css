@@ -75,6 +75,7 @@ main {
     width: 280px;
     padding: 1rem;
     border-radius: 4em;
+    margin-bottom: 2em;
 }
 
 .gastronomia_text {
@@ -91,9 +92,7 @@ main {
     color: #c4972e;
 }
 
-footer {
-    margin-top: 100px;
-}
+
 
 body,
 html {

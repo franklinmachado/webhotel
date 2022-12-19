@@ -117,6 +117,10 @@ h3 {
 
 /* FOOTER */
 
+.footerLogin {
+    margin: 0;
+}
+
 footer nav {
     display: flex;
     color: var(--cor-letra-clara);
