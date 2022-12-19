@@ -4,35 +4,45 @@ main {
 }
 
 .h2__title {
+    font-size: 2.5em;
+    color: #364420;
     padding-left: 2rem;
     margin: 2rem;
+    text-align: center;
 }
 
 .h2__title__sobre {
     text-align: center;
     color: var(--cor-letra-clara);
     background-color: var(--background-escuro);
-    padding: 1rem 0;
 }
 
 .chale__container {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 3%;
+    line-height: 1.8;
+}
+
+.chale__text h2 {
+    max-width: 20em;
+    line-height: 1.4;
+    font-size: 1.9em;
+    color: #c4972e;
 }
 
 .chale__image img {
-    max-width: 520px;
-    padding: 2rem;
+    max-width: 35em;
     border-radius: 40px;
+    padding: 1em;
 }
 
 .chale__text p {
-    max-width: 40ch;
-    font-size: 1.4rem;
+    max-width: 30em;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     margin: 0;
-    margin-right: 180px;
 }
 
 .sobre__flex {
@@ -48,28 +58,129 @@ main {
 }
 
 .sobre__text {
-    width: 80ch;
-    font-size: 1.5rem;
-    margin: 3rem auto;
+    padding: 1em;
+    text-align: center;
+    max-width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: auto;
 }
 
-.gastronomia_container{
+.gastronomia_container {
     display: flex;
+    align-items: center;
 }
 
 .gastronomia_image img {
     width: 280px;
-    padding: 2rem;
-    border-radius: 40px;
+    padding: 1rem;
+    border-radius: 4em;
 }
 
 .gastronomia_text {
     width: 60ch;
-    padding: 2rem 2rem;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    padding: 2rem 4em;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.gastronomia_h2 {
+    max-width: 15em;
+    line-height: 1.2;
+    font-size: 1.8em;
+    color: #c4972e;
 }
 
 footer {
     margin-top: 100px;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* Botões */
+
+.botaoClaro {
+    font-size: larger;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: #f9b115b2;
+    color: var(--background-escuro);
+}
+
+.botaoClaro:hover {
+    background-color: var(--background-escuro);
+    color: var(--cor-letra-clara);
+}
+
+.botaoEscuroMenor {
+    margin-top: 1.5em;
+    border: 0;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: var(--background-escuro);
+    color: var(--cor-letra-clara);
+}
+
+.botaoEscuroMenor:hover {
+    background-color: #c4972e;
+    color: var(--cor-letra-clara);
+}
+
+.botaoEscuroMaior {
+    min-width: 30em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 0;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--background-escuro);
+    color: var(--cor-letra-clara);
+}
+
+.botaoEscuroMaior:hover {
+    background-color: #c4972e;
+    color: var(--cor-letra-clara);
+}
+
+/* imagem do banner */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/images/bannerHome.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -32px;
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: var(--cor-letra-clara);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.cropped1 {
+    max-width: 35em;
+    min-width: 30em;
+    height: 28em;
+    object-fit: cover;
 }
