@@ -41,22 +41,30 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 1em;
     color: var(--cor-letra-clara);
-    cursor: pointer;
-    --s: 0.1em;
-    --c: var(--cor-destaque);
-    padding-bottom: var(--s);
-    background: linear-gradient(90deg, var(--c) 50%, #000 0)
-            calc(100% - var(--_p, 0%)) / 200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: 0.5s;
+    position: relative;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
-nav a:hover {
-    --_p: 100%;
+nav a::before {
+    position: absolute;
+    margin-top: 0.5em;
+    content: "";
+    bottom: 0;
+    width: 0px;
+    height: 2px;
+    background-color: #c4972e;
+    transition: width 0.2s;
+}
+
+nav a:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+nav:hover {
+    cursor: pointer;
 }
 
 ul {

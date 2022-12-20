@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/css/style.css" />
         <title>Formulário de Contato</title>
     </head>
-    <body>
+    <body class="bodyContato">
         <header>
             <img class="logo" src="../../images/logoColorida.svg" alt="" />
             <nav>
@@ -20,8 +20,8 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div id="contact-form">
+        <main class="contato">
+            <div class="contact-form">
                 <div>
                     <h1>Fale com a gente!<br />Teremos prazer em atendê-lo</h1>
                     <h4>
@@ -31,8 +31,8 @@
                         reserva <a href="reservas.html"><u>clique aqui.</u></a>
                     </h4>
                 </div>
-                <p id="failure">Ops...a mensagem não pode ser enviada.</p>
-                <p id="success">Mensagem enviada com sucesso. Obrigado!</p>
+                <p class="failure">Ops...a mensagem não pode ser enviada.</p>
+                <p class="success">Mensagem enviada com sucesso. Obrigado!</p>
 
                 <form method="post" action="/">
                     <div>
@@ -40,7 +40,7 @@
                             <span class="required">Nome Completo: *</span>
                             <input
                                 type="text"
-                                id="name"
+                                class="name"
                                 name="name"
                                 value=""
                                 placeholder="Nome completo"
@@ -55,7 +55,7 @@
                             <span class="required">E-mail: *</span>
                             <input
                                 type="email"
-                                id="email"
+                                class="email"
                                 name="email"
                                 value=""
                                 placeholder="Seu E-mail"
@@ -69,7 +69,7 @@
                             <span class="required">Telefone: *</span>
                             <input
                                 type="telefonetelefone"
-                                id="telefone"
+                                class="telefone"
                                 name="telefone"
                                 value=""
                                 placeholder="(DDD) + Número"
@@ -81,7 +81,7 @@
                     <div>
                         <label for="assunto">
                             <span class="required">Assunto: </span>
-                            <select id="assunto" name="assunto" tabindex="4">
+                            <select class="assunto" name="assunto" tabindex="4">
                                 <option selected disabled value="">
                                     Selecione
                                 </option>
@@ -95,7 +95,7 @@
                         <label for="mensagem">
                             <span class="required">Menssagem: *</span>
                             <textarea
-                                id="message"
+                                class="message"
                                 name="message"
                                 placeholder="Escreva sua mensagem aqui"
                                 tabindex="5"
@@ -104,7 +104,7 @@
                         </label>
                     </div>
                     <div>
-                        <button name="submit" type="submit" id="submit">
+                        <button name="submit" type="submit" class="submit">
                             Enviar
                         </button>
                     </div>
