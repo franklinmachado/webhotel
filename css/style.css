@@ -23,6 +23,7 @@
     --cor-apoio-claro: #fadea3;
 }
 
+
 /* HEADER*/
 
 header {
@@ -30,9 +31,11 @@ header {
     color: var(--cor-letra-clara);
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 nav {
+    e;
     padding: 1em;
     color: var(--cor-letra-clara);
     margin: auto;
