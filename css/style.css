@@ -44,8 +44,7 @@ nav a {
     text-decoration: none;
     color: var(--cor-letra-clara);
     position: relative;
-    margin-left: 15px;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 nav a::before {
