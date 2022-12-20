@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tela Cadastro</title>
-    </head>
 
-    <body>
-        <header>
-            <img
-                src="../../images/logoColorida.svg"
-                alt="logo montanha"
-                height="80"
-            />
-            <nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+    <title>Montseny - Tela de Cadastro</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../../images/logoColorida.svg" alt="logo montanha" />
+        <nav class="menu">
+            <ul class="listas">
+                <li>
+                    <a href="../../index.html">Página principal</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Nosso Hotel</a>
+                </li>
+                <li>
+                    <a href="acomodacoes.html">Acomodações</a>
+                </li>
+                <li>
+                    <a href="reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formulario-container">
+        <form class="formulario-cadastro">
+            <h2 class="mensagem">Bem vindo a tela de cadastro</h2>
+            <div class="input-container">
+                <label>Nome Completo</label>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" />
+            </div>
+            <div class="input-container">
+                <label> Email </label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-container">
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha" />
+            </div>
+            <div class="input-container">
+                <label>Confirmar Senha</label>
+                <input type="password" name="confirmarsenha" />
+            </div>
+            <div class="input-container">
+                <label>CPF</label>
+                <input type="text" name="cpf" id="cpf" />
+            </div>
+            <div class="input-container">
+                <label>Telefone</label>
+                <input type="text" name="telefone" id="telefone" />
+            </div>
+            <div class="input-container">
+                <label>Data de Nascimento</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="input-container">
+                <label>CEP</label>
+                <input type="text" name="cep" id="cep" />
+            </div>
+            <div class="botoes">
+                <a href="index.html"><button class="botaoEscuroMenor">Finalizar</button></a>
+            </div>
+        </form>
+        <!--<img src="../../images/login.webp" class="imagem" alt="" />-->
+    </div>
+
+    <footer>
+        <nav class="footerLogin">
+            <img class="logoFooter" src="../../images/logoBranca.svg" alt="logo montanha" />
+            <ul>
                 <li>
                     <a href="../../index.html">Página Principal</a>
                 </li>
@@ -28,72 +94,29 @@
                     <a href="reservas.html">Reservas</a>
                 </li>
                 <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
                     <a href="contato.html">Contato</a>
                 </li>
-            </nav>
-        </header>
+            </ul>
 
-        <br />
-        <main>
-            <form action="index.html" >  <!--precisa do metodo!-->
-                <ul>
-                    <li>
-                        <label>Nome Completo</label>
-                        <input
-                            type="text"
-                            name="nomeCompleto"
-                            id="nomeCompleto"
-                        />
-                    </li>
-                    <li>
-                        <label> Email </label> <br />
-                        <input type="email" name="email" id="email" />
-                    </li>
-                    <li>
-                        <label>Senha</label>
-                        <input type="password" name="senha" id="senha" />
-                    </li>
-                    <li>
-                        <label>Confirmar Senha</label> <br />
-                        <input type="password" name="confirmarsenha" />
-                    </li>
-                    <li>
-                        <label>CPF</label> <br />
-                        <input type="text" name="cpf" id="cpf" />
-                    </li>
-                    <li>
-                        <label>Telefone</label> <br />
-                        <input type="text" name="telefone" id="telefone" />
-                    </li>
-                    <li>
-                        <label>Data de Nascimento</label> <br />
-                        <input type="date" name="date" id="date" />
-                    </li>
-                    <li>
-                        <label>CEP</label> <br />
-                        <input type="text" name="cep" id="cep" />
-                    </li>
-                </ul>
-                <a href="login.html"><button>Voltar</button></a>
-                <button type="submit">Finalizar</button>
-            </form>
-        </main>
-        <hr />
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li>
-                        <a href="../admin/homeadm.html"
-                            >Central do Administrador</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
-        </footer>
-    </body>
+            <ul>
+                <li>
+                    <a href=""><img class="social" src="/images/facebook.svg" alt="facebook" /></a>
+                </li>
+                <li>
+                    <a href=""><img class="social" src="/images/instagram.svg" alt="instagram" /></a>
+                </li>
+                <li>
+                    <a href=""><img class="social" src="/images/whatsapp.svg" alt="whatsapp" /></a>
+                </li>
+                <li>
+                    <a href=""><img class="social" src="/images/o-email.svg" alt="email" /></a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            &copy Todos os direitos reservados - 2022 - Equipe 3
+        </p>
+    </footer>
+</body>
+
 </html>
