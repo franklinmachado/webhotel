@@ -40,9 +40,9 @@ h4 a {
     color: #f9af15;
 }
 #contact-form {
-    background-color: hsla(89, 38%, 15%, 0.712);
+    background-color: hsla(89, 38%, 15%, 0.82);
     padding: 2em;
-    max-width: 45em;
+    max-width: 38em;
     margin: auto;
     border-radius: 2em;
     -webkit-border-radius: 2em;
