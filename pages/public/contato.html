@@ -4,68 +4,84 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
         <title>Formulário de Contato</title>
     </head>
     <body>
         <header>
-            <img
-                src="../../images/logoColorida.svg"
-                alt="logo montanha"
-                height="80"
-            />
+            <img class="logo" src="../../images/logoColorida.svg" alt="" />
             <nav>
                 <ul>
-                    <li><a href="../../index.html">Página Principal</a></li>
-                    <li><a href="sobre.html">Nosso Hotel</a></li>
+                    <li><a href="../../index.html">Página principal</a></li>
                     <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="contato.html">Nosso Hotel</a></li>
                     <li><a href="reservas.html">Reservas</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
-
         <main>
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Preencha todos os campos</legend>
+            <div id="contact-form">
+                <div>
+                    <h1>Fale com a gente!<br />Teremos prazer em atendê-lo</h1>
+                    <h4>
+                        Este canal é dedicado exclusivamente para que os
+                        visitantes enviem dúvidas, sugestões, reclamações ou
+                        elogios sobre o hotel Montseny. Caso queira realizar sua
+                        reserva <a href="reservas.html"><u>clique aqui.</u></a>
+                    </h4>
+                </div>
+                <p id="failure">Ops...a mensagem não pode ser enviada.</p>
+                <p id="success">Mensagem enviada com sucesso. Obrigado!</p>
 
-                    <ul>
-                        <li>
-                            <label for="nome"><b>Nome Completo</b></label
-                            ><br />
+                <form method="post" action="/">
+                    <div>
+                        <label for="nome">
+                            <span class="required">Nome Completo: *</span>
                             <input
                                 type="text"
-                                name="nome"
-                                id="nome"
-                                placeholder="Digite seu nome"
-                                required
+                                id="name"
+                                name="name"
+                                value=""
+                                placeholder="Nome completo"
+                                required="required"
+                                tabindex="1"
+                                autofocus="autofocus"
                             />
-                        </li>
-                        <li>
-                            <label for="email"><b>Email</b></label
-                            >
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <span class="required">E-mail: *</span>
                             <input
                                 type="email"
-                                name="email"
                                 id="email"
-                                placeholder="Digite seu email"
-                                required
+                                name="email"
+                                value=""
+                                placeholder="Seu E-mail"
+                                tabindex="2"
+                                required="required"
                             />
-                        </li>
-                        <li>
-                            <label for="telefone"><b>Telefone</b></label
-                            >
+                        </label>
+                    </div>
+                    <div>
+                        <label for="telefone">
+                            <span class="required">Telefone: *</span>
                             <input
-                                type="text"
-                                name="telefone"
+                                type="telefonetelefone"
                                 id="telefone"
-                                placeholder="Digite seu telefone"
-                                required
+                                name="telefone"
+                                value=""
+                                placeholder="(DDD) + Número"
+                                tabindex="2"
+                                required="required"
                             />
-                        </li>
-                        <li>
-                            <label for="assunto"><b>Assunto</b></label> <br />
-                            <select name="assunto" id="assunto">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="assunto">
+                            <span class="required">Assunto: </span>
+                            <select id="assunto" name="assunto" tabindex="4">
                                 <option selected disabled value="">
                                     Selecione
                                 </option>
@@ -73,32 +89,84 @@
                                 <option>Ouvidoria</option>
                                 <option>Departamento Financeiro</option>
                             </select>
-                        </li>
-                        <li>
-                            <label for="msg"><b>Mensagem</b></label
-                            ><br />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mensagem">
+                            <span class="required">Menssagem: *</span>
                             <textarea
-                                name="msg"
-                                id="msg"
-                                cols="30"
-                                rows="10"
-                                placeholder="Digite sua mensagem:"
+                                id="message"
+                                name="message"
+                                placeholder="Escreva sua mensagem aqui"
+                                tabindex="5"
+                                required="required"
                             ></textarea>
-                        </li>
-                        <button>Enviar</button>
-                    </ul>
-                </fieldset>
-            </form>
+                        </label>
+                    </div>
+                    <div>
+                        <button name="submit" type="submit" id="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
         </main>
-        <hr />
+
         <footer>
             <nav>
+                <img
+                    class="logoFooter"
+                    src="../../images/logoBranca.svg"
+                    alt="logo montanha"
+                />
                 <ul>
+                    <li><a href="../../index.html">Pagina principal</a></li>
+                    <li><a href="sobre.html">Nosso hotel</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="../admin/homeadm.html">Central do Administrador</a></li>
+                    <li>
+                        <a href="admin/formularioAdmin.html">Administração</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/facebook.svg"
+                                alt="facebook"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/instagram.svg"
+                                alt="instagram"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/whatsapp.svg"
+                                alt="whatsapp"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/o-email.svg"
+                                alt="email"
+                        /></a>
+                    </li>
                 </ul>
             </nav>
-            <span>&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+            <p class="copyright">
+                &copy Todos os direitos reservados - 2022 - Equipe 3
+            </p>
         </footer>
     </body>
 </html>
