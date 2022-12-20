@@ -23,7 +23,6 @@
     --cor-apoio-claro: #fadea3;
 }
 
-
 /* HEADER*/
 
 header {
@@ -35,7 +34,6 @@ header {
 }
 
 nav {
-    e;
     padding: 1em;
     color: var(--cor-letra-clara);
     margin: auto;
