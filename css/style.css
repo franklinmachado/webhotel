@@ -2,7 +2,8 @@
 @import "acomodacoes.css";
 @import "login.css";
 @import "sobre.css";
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import "contato.css";
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 * {
     font-family: Montserrat, arial, sans-serif;
@@ -33,10 +34,11 @@ header {
     color: var(--cor-letra-clara);
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 nav {
-    padding: 5px;
+    padding: 1em;
     color: var(--cor-letra-clara);
     margin: auto;
     background-color: var(--background-escuro);
@@ -44,22 +46,29 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 1.2em;
     color: var(--cor-letra-clara);
-    cursor: pointer;
-    --s: 0.1em;
-    --c: var(--cor-destaque);
-    padding-bottom: var(--s);
-    background: linear-gradient(90deg, var(--c) 50%, #000 0)
-            calc(100% - var(--_p, 0%)) / 200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: 0.5s;
+    position: relative;
+    font-size: 1.2em;
 }
 
-nav a:hover {
-    --_p: 100%;
+nav a::before {
+    position: absolute;
+    margin-top: 0.5em;
+    content: "";
+    bottom: 0;
+    width: 0px;
+    height: 2px;
+    background-color: #c4972e;
+    transition: width 0.2s;
+}
+
+nav a:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+nav:hover {
+    cursor: pointer;
 }
 
 ul {
@@ -86,8 +95,7 @@ ul {
 
 .logoFooter {
     margin: auto;
-    padding: 15px;
-    height: 5em;
+    max-width: 10em;
 }
 
 /* BODY */
@@ -121,6 +129,11 @@ h3 {
 
 /* FOOTER */
 
+footer {
+    display: block;
+    width: 100%;
+}
+
 .footerLogin {
     margin: 0;
 }
@@ -130,11 +143,15 @@ footer nav {
     color: var(--cor-letra-clara);
     margin: 0 auto;
     align-items: center;
-    padding: 10px;
+    padding: 2em;
+}
+
+footer ul {
+    font-weight: 500;
 }
 
 .social {
-    width: 32px;
+    width: 2em;
     color: var(--background-primario-claro);
 }
 
@@ -145,15 +162,36 @@ footer nav {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(6, 1fr);
+@media (max-width: 1194px) and (orientation: landscape) {
+    footer ul {
+        font-size: 0.7em;
+        display: flex;
+        color: var(--cor-letra-clara);
+        margin: 0 auto;
+        align-items: center;
+        padding: 1em;
+    }
+    .logoFooter {
+        margin: auto;
+        max-width: 7em;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr);
+@media (max-width: 1024px) and (orientation: portrait) {
+    footer ul {
+        display: none;
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+    footer ul {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    footer ul {
+        display: none;
     }
 }
 
