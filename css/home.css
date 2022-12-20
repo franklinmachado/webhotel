@@ -152,7 +152,7 @@ html {
 /* imagem do banner */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("/images/bannerHome.jpg");
+    url("/images/bannerHome.jpg");
     height: 50em;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,3 +182,6 @@ html {
     height: 28em;
     object-fit: cover;
 }
+
+/* medias querys */
+
