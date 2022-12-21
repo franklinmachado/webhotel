@@ -89,6 +89,7 @@ h1 {
         max-width: 50%;
         margin: auto;
         padding-bottom: 1.5em;
+        text-align: justify;
     }
     
     
@@ -144,62 +145,78 @@ h1 {
         height: 20em;
         border-radius: 5em 5em 0 0;
     }
-    
-    
-
 }
 
+@media (max-width: 414px) and (orientation: portrait) {
 
+    
 
+    .acomodacoes_text h1 {
+        padding-top: 1em;
+        font-size: 2em;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media (max-width: 768px) {
+    .acomodacoes_text p {
+        font-size: 1em;
+        max-width: 80%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    
+    .acomodacoes_img {
+        width: 300px;
+        height: 200px;
+    }
+    
     .acomodacoes_container {
-        display: block;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        max-width: 414px;
+        margin: 0 auto;
+        margin-left: 1em;
     }
 
+    
     .destaque_container {
-        display: block;
-    }
-
-    .para_destaque {
-        margin-left: 7rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5em;
+        max-width: 414px;
+        align-items: center;
+        margin-top: 2rem;
+        margin: 0 auto;
         text-align: justify;
     }
 
-    .destaque_img {
-        width: 250px;
-        height: 300px;
+    .botaoEscuroMenor {
+        margin: 0 auto;
+        margin-bottom: 2em;
     }
-} */
+
+    .destaque_container h2 {
+        line-height: 0.5;
+        font-size: 1.5em;
+        color: #c4972e;
+    }
+    
+    .destaque_container p {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+        text-align: justify;
+        line-height: 1;
+        
+    }
+
+
+    .destaque_img {
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+        border-radius: 3em 3em 0 0;
+    }
+    
+}
+
+
