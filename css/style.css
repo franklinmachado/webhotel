@@ -89,7 +89,7 @@ ul {
     width: 100%;
     background-color: var(--background-primario-claro);
     margin: auto;
-    padding: 15px;
+    padding: 1em 0;
     height: 10em;
 }
 
