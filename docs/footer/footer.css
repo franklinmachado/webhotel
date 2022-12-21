@@ -1,0 +1,130 @@
+
+:root {
+    --background-primario-claro: #fffef5;
+    --background-claro-secundario: #fdeecc;
+    --background-escuro: #283618;
+    --cor-letra-escura: #283618;
+    --cor-letra-clara: #fffef5;
+    --cor-principal: #364420;
+    --cor-destaque: #c4972e;
+    --cor-link: #f9af15;
+    --cor-secundaria: #606c38;
+    --cor-apoio: #fac75c;
+    --cor-apoio-claro: #fadea3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer__container{
+    background-color: var(--background-escuro);
+}
+.footer__wrapper{
+    width: 90%;
+    max-width: 1280px;
+    margin-inline: auto;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+
+.footer__logo {
+   
+    height: calc(96px + 10vh);
+}
+.footer__navigation{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.footer__navigation li a {
+    color: var(--cor-letra-clara);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.footer__social{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.footer__social li a{
+    text-decoration: none;
+}
+.footer__social li a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+.footer__social li a[data-social="facebook"]{
+    background-image: url("../../images/facebook.svg");
+}
+.footer__social li a[data-social="instagram"]{
+    background-image: url("../../images/instagram.svg");
+}
+.footer__social li a[data-social="whatsapp"]{
+    background-image: url("../../images/whatsapp.svg");
+}
+.footer__social li a[data-social="email"]{
+    background-image: url("../../images/o-email.svg");
+}
+.copyright{
+    background-color: var(--background-primario-claro);
+    display:block;
+    padding-block: 1rem;
+    text-align: center;
+}
+
+@media (max-width:915px) and (orientation:landscape){}
+
+@media (max-width: 414px) and (orientation: portrait) {}
+
+
+
+@media (max-width: 1194px) and (orientation: landscape){}
+
+@media (max-width: 1024px) and (orientation: portrait) {}
+
+
+@media (max-width: 1194px) and (orientation: landscape) {
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .footer__wrapper{
+        flex-direction: column;
+    }
+
+    .footer__navigation{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .footer__wrapper{
+        flex-direction: column;
+    }
+
+    .footer__navigation{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
