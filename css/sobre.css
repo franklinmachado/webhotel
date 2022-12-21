@@ -1,17 +1,10 @@
-.container2 {
-    width: 100%;
-    width: 1200px;
-    margin-inline: auto;
-}
 
 .hero-image2 {
     background-image: url("/images/sobre.webp");
-    height: 70%;
+    height: calc(20rem + 10vh);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin-top: 0;
 }
 
 .hero {
@@ -39,11 +32,11 @@
 }
 
 .main__container {
-    margin: auto;
-
+    margin-inline: auto;
+    width: 80%;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
-    gap: 2%;
     margin-block: 2rem;
 }
 .main__section article h3 {
@@ -58,32 +51,46 @@
     line-height: 1.6;
 }
 
-.main__gallery {
+/*.main__gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-block: 2rem;
+}*/
+.main__gallery{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-block: 2rem;
 }
+
 .main__gallery img {
-    height: 14rem;
-    flex-grow: 1;
-    min-width: 320px;
+    width: 100%;
+    height: calc(120px + 15vh);
+}
+
+.map {
+    display: block;
+    border: none;
+    margin-inline: auto;
+    max-width: 42rem;
+    height: 50vh;
+    width: 100%;
 }
 
 .botaoEscuroMaior2 {
     display: block;
-    margin: auto;
-    min-width: 30em;
-    margin-top: 3em;
-    margin-bottom: 1em;
+    margin-inline: auto;
+    margin-block: 2rem;
     border: 0;
-    font-size: 1em;
     font-weight: 500;
     padding: 1em;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: var(--background-escuro);
     color: var(--cor-letra-clara);
+    text-decoration: none;
+    width: fit-content;
 }
 
 .botaoEscuroMaior2:hover {
