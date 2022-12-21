@@ -57,6 +57,65 @@
 
 
 
+@media (max-width: 1194px) and (orientation: landscape) {
+
+    .formulario-container{
+        padding: 2em;
+        width: 50%;  
+    }
+
+    .imagem{
+        width: 50%;
+    }
+
+    footer{
+        overflow: hidden; 
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .formulario-container{
+        padding: 2em;
+        width: 50%;
+    }
+
+    .imagem{
+        width: 50%;
+    }
+}
+
+
+/*mobile*/
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .flex-container{
+    display: block;
+}
+.formulario-container{
+    padding: 3em;
+}
+
+.imagem{
+    display: none;
+}
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .flex-container{
+    display: block;
+}
+.formulario-container{
+    padding: 3em;
+    width: 100%;
+}
+
+.imagem{
+    display: none;
+}
+}
+
+
+
 
 
 
