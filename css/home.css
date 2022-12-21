@@ -217,10 +217,10 @@ html {
         margin-top: 2rem;
         border-radius: 10px;
     }
-    
-   .gastronomia_container img {
-    padding: 3rem;
-   }
+
+    .gastronomia_container img {
+        padding: 3rem;
+    }
 }
 
 @media (min-width: 1024px) and (orientation: portrait) {
@@ -253,8 +253,8 @@ html {
     }
 
     .gastronomia_text {
-    padding: 3rem;
-   }
+        padding: 3rem;
+    }
 }
 
 /*mobile*/
@@ -267,7 +267,7 @@ html {
         margin-left: 4rem;
     }
 
-    .gastronomia_image img{
+    .gastronomia_image img {
         width: 220px;
     }
 }
@@ -276,7 +276,63 @@ html {
     .main-home {
         width: 414px;
     }
+
     .hero-image {
-        background-image: none;
+        background: none;
+        height: auto;
+    }
+
+    .hero-text {
+        top: 0;
+        left: 0;
+        transform: none;
+        position: none;
+    }
+
+    .sobre__text p {
+        font-size: 1.8rem;
+        width: 18ch;
+        box-sizing: border-box;
+        margin-right: 1rem;
+    }
+
+    .hero-text h1 {
+        color: black;
+        font-size: 1rem;
+    }
+
+    .cropped1 {
+        max-width: 12em;
+        min-width: 17em;
+        height: 17em;
+        margin-left: 13%;
+        margin-right: 2rem;
+    }
+
+    .chale__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sobre__flex {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .botaoEscuroMaior {
+        min-width: auto;
+    }
+
+    .gastronomia_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gastronomia_text {
+        width: 28ch;
+    }
+
+    .gastronomia_text p {
+        font-size: 1.8rem;
     }
 }
