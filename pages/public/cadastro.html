@@ -1,122 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/cadastro.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet"
+        />
+        <title>Montseny - Tela de Cadastro</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/cadastro.css">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
-    <title>Montseny - Tela de Cadastro</title>
-</head>
+    <body>
+        <header class="header">
+            <img
+                class="logo"
+                src="../../images/logoColorida.svg"
+                alt="logo montanha"
+            />
+            <nav class="menu">
+                <ul class="listas">
+                    <li>
+                        <a href="../../index.html">Página principal</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Nosso Hotel</a>
+                    </li>
+                    <li>
+                        <a href="acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <header class="header">
-        <img class="logo" src="../../images/logoColorida.svg" alt="logo montanha" />
-        <nav class="menu">
-            <ul class="listas">
-                <li>
-                    <a href="../../index.html">Página principal</a>
-                </li>
-                <li>
-                    <a href="sobre.html">Nosso Hotel</a>
-                </li>
-                <li>
-                    <a href="acomodacoes.html">Acomodações</a>
-                </li>
-                <li>
-                    <a href="reservas.html">Reservas</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="formulario-container">
+            <form action="../../index.html" class="formulario-cadastro">
+                <h2 class="mensagem">Bem vindo a tela de cadastro</h2>
+                <div class="input-container">
+                    <label>Nome Completo</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" />
+                </div>
+                <div class="input-container">
+                    <label> Email </label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="input-container">
+                    <label>Senha</label>
+                    <input type="password" name="senha" id="senha" />
+                </div>
+                <div class="input-container">
+                    <label>Confirmar Senha</label>
+                    <input type="password" name="confirmarsenha" />
+                </div>
+                <div class="input-container">
+                    <label>CPF</label>
+                    <input type="text" name="cpf" id="cpf" />
+                </div>
+                <div class="input-container">
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" id="telefone" />
+                </div>
+                <div class="input-container">
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+                <div class="input-container">
+                    <label>CEP</label>
+                    <input type="text" name="cep" id="cep" />
+                </div>
+                <div class="botoes">
+                    <button class="botaoEscuroMenor">Finalizar</button>
+                </div>
+            </form>
+        </div>
 
-    <div class="formulario-container">
-        <form class="formulario-cadastro">
-            <h2 class="mensagem">Bem vindo a tela de cadastro</h2>
-            <div class="input-container">
-                <label>Nome Completo</label>
-                <input type="text" name="nomeCompleto" id="nomeCompleto" />
-            </div>
-            <div class="input-container">
-                <label> Email </label>
-                <input type="email" name="email" id="email" />
-            </div>
-            <div class="input-container">
-                <label>Senha</label>
-                <input type="password" name="senha" id="senha" />
-            </div>
-            <div class="input-container">
-                <label>Confirmar Senha</label>
-                <input type="password" name="confirmarsenha" />
-            </div>
-            <div class="input-container">
-                <label>CPF</label>
-                <input type="text" name="cpf" id="cpf" />
-            </div>
-            <div class="input-container">
-                <label>Telefone</label>
-                <input type="text" name="telefone" id="telefone" />
-            </div>
-            <div class="input-container">
-                <label>Data de Nascimento</label>
-                <input type="date" name="date" id="date">
-            </div>
-            <div class="input-container">
-                <label>CEP</label>
-                <input type="text" name="cep" id="cep" />
-            </div>
-            <div class="botoes">
-                <a href="index.html"><button class="botaoEscuroMenor">Finalizar</button></a>
-            </div>
-        </form>
-        <!--<img src="../../images/login.webp" class="imagem" alt="" />-->
-    </div>
+        <footer>
+            <nav class="footerLogin">
+                <img
+                    class="logoFooter"
+                    src="../../images/logoBranca.svg"
+                    alt="logo montanha"
+                />
+                <ul>
+                    <li>
+                        <a href="../../index.html">Página Principal</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Nosso Hotel</a>
+                    </li>
+                    <li>
+                        <a href="acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
 
-    <footer>
-        <nav class="footerLogin">
-            <img class="logoFooter" src="../../images/logoBranca.svg" alt="logo montanha" />
-            <ul>
-                <li>
-                    <a href="../../index.html">Página Principal</a>
-                </li>
-                <li>
-                    <a href="sobre.html">Nosso Hotel</a>
-                </li>
-                <li>
-                    <a href="acomodacoes.html">Acomodações</a>
-                </li>
-                <li>
-                    <a href="reservas.html">Reservas</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href=""><img class="social" src="/images/facebook.svg" alt="facebook" /></a>
-                </li>
-                <li>
-                    <a href=""><img class="social" src="/images/instagram.svg" alt="instagram" /></a>
-                </li>
-                <li>
-                    <a href=""><img class="social" src="/images/whatsapp.svg" alt="whatsapp" /></a>
-                </li>
-                <li>
-                    <a href=""><img class="social" src="/images/o-email.svg" alt="email" /></a>
-                </li>
-            </ul>
-        </nav>
-        <p class="copyright">
-            &copy Todos os direitos reservados - 2022 - Equipe 3
-        </p>
-    </footer>
-</body>
-
+                <ul>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/facebook.svg"
+                                alt="facebook"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/instagram.svg"
+                                alt="instagram"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/whatsapp.svg"
+                                alt="whatsapp"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/o-email.svg"
+                                alt="email"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copyright">
+                &copy Todos os direitos reservados - 2022 - Equipe 3
+            </p>
+        </footer>
+    </body>
 </html>

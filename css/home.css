@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .main-home {
     width: 1280px;
     margin: auto;
@@ -152,11 +156,11 @@ html {
 /* imagem do banner */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/images/bannerHome.jpg");
+        url("/images/bannerHome.jpg");
     height: 50em;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
     margin-top: -0.7em;
 }
 
@@ -183,5 +187,96 @@ html {
     object-fit: cover;
 }
 
-/* medias querys */
+/*Tablet*/
 
+@media (max-width: 1194px) and (orientation: landscape) {
+    .main-home {
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .cropped1 {
+        max-width: 28em;
+        min-width: 25em;
+        margin-right: 2rem 0;
+        height: 22em;
+        margin-left: 32px;
+    }
+
+    .chale__text {
+        margin-right: 80px;
+    }
+
+    .h2__title {
+        font-size: 2rem;
+    }
+
+    .sobre__flex img {
+        width: 260px;
+        margin-left: 45px;
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+    
+   .gastronomia_container img {
+    padding: 3rem;
+   }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    .main-home {
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .cropped1 {
+        max-width: 28em;
+        min-width: 25em;
+        height: 22em;
+        margin-left: 32px;
+        margin-right: 2rem;
+    }
+
+    .chale__text {
+        margin-right: 80px;
+    }
+
+    .h2__title {
+        font-size: 2rem;
+    }
+
+    .sobre__flex img {
+        width: 260px;
+        margin-left: 35px;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+
+    .gastronomia_text {
+    padding: 3rem;
+   }
+}
+
+/*mobile*/
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .sobre__flex img {
+        width: 200px;
+        margin-top: 2rem;
+        border-radius: 10px;
+        margin-left: 4rem;
+    }
+
+    .gastronomia_image img{
+        width: 220px;
+    }
+}
+
+@media (min-width: 414px) and (orientation: portrait) {
+    .main-home {
+        width: 414px;
+    }
+    .hero-image {
+        background-image: none;
+    }
+}
