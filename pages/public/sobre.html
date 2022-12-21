@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sobre</title>
         <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="/docs/header/header.css" />
+        <link rel="stylesheet" href="/docs/footer/footer.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,16 +17,25 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="../../images/logoColorida.svg" alt="" />
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Página principal</a></li>
-                    <li><a href="acomodacoes.html">Acomodações</a></li>
-                    <li><a href="reservas.html">Reservas</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
+            <img
+                class="header__logo"
+                src="../../images/logoColorida.svg"
+                alt=""
+            />
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <nav>
+                        <ul class="main-navigation">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <div class="hero-image2"></div>
@@ -96,60 +107,56 @@
         </main>
 
         <footer>
-            <nav>
-                <img
-                    class="logoFooter"
-                    src="../../images/logoBranca.svg"
-                    alt="logo montanha"
-                />
-                <ul>
-                    <li><a href="../../index.html">Pagina principal</a></li>
-                    <li><a href="sobre.html">Nosso hotel</a></li>
-                    <li><a href="acomodacoes.html">Acomodações</a></li>
-                    <li><a href="reservas.html">Reservas</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li>
-                        <a href="admin/formularioAdmin.html">Administração</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/facebook.svg"
-                                alt="facebook"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/instagram.svg"
-                                alt="instagram"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/whatsapp.svg"
-                                alt="whatsapp"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/o-email.svg"
-                                alt="email"
-                        /></a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                &copy Todos os direitos reservados - 2022 - Equipe 3
-            </p>
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <img
+                        class="footer__logo"
+                        src="../../images/logoBranca.svg"
+                        alt=""
+                    />
+                    <nav>
+                        <ul class="footer__navigation">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li>
+                                <a href="admin/formularioAdmin.html"
+                                    >Administração</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="footer__social">
+                            <li>
+                                <a href="#" data-social="facebook"
+                                    ><span class="sr-only">Facebook</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="instagram"
+                                    ><span class="sr-only">Instagram</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="whatsapp"
+                                    ><span class="sr-only">Whatsapp</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="email"
+                                    ><span class="sr-only">Email</span></a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="copyright"
+                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
+                >
+            </div>
         </footer>
     </body>
 </html>
