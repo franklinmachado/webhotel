@@ -3,42 +3,59 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding: 2em;
+
+    background: linear-gradient(
+            hwb(0 100% 0% / 0.815),
+            hsla(0, 0%, 100%, 0.573)
+        ),
+        url(/images/5332433.jpg) no-repeat;
+    background-size: cover;
+
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .formulario-cadastro{
+    display:grid;
+    grid-template-columns: 1fr;
     width: 35rem;
+    background-color: hsla(89, 38%, 15%, 0.895);
+    padding: 2em;
+    border-radius: 1em;
 }
 
 .mensagem{
     font-family: "Satisfy", cursive;
     font-size: 3.2rem;
-    font-weight: 300;
+    font-weight: 200;
     color: #c4972e;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 0.8em;
 }
-
 .input-container{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;  
+    padding: 0.5em 0;
 }
 
 .input-container input{
-    padding: 0.4em;
-    font-size: 1.5em;
+    padding: 0.6em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    font-style: italic;
 }
 
-.input-container input{
-    border:none;
-    border-bottom: 1px solid var(--cor-secundaria);
+
+.formulario-cadastro button{
+    background-color: #c4972e;
+    text-decoration: none;
+    width: 50%;
 }
 
-.botoes{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    gap: 1rem;
-    justify-content: right;
+.formulario-cadastro button:hover{
+    color: #283618;
+    font-weight: 700;
+    transition:1s;
+
 }
+
+
