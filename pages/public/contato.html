@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/docs/header/header.css">
-        <link rel="stylesheet" href="/docs/footer/footer.css">
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../docs/header/header.css">
+        <link rel="stylesheet" href="../../docs/footer/footer.css">
         <title>Formulário de Contato</title>
     </head>
     <body class="bodyContato">
@@ -20,11 +20,10 @@
                 <div class="header__wrapper">
                     <nav>
                         <ul class="main-navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="../../index.html">Página principal</a></li>
+                            <li><a href="sobre.html">Nosso hotel</a></li>
                             <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
                             <li><a href="login.html">Login</a></li>
                         </ul>
                     </nav>
@@ -47,9 +46,7 @@
 
                 <form class="formularioContato" method="post" action="/">
                     <div>
-                        <label for="nome">
-                            <span class="required">Nome Completo: *</span>
-                            <input
+                                                    <input
                                 type="text"
                                 class="name"
                                 name="name"
@@ -61,10 +58,7 @@
                             />
                         </label>
                     </div>
-                    <div>
-                        <label for="email">
-                            <span class="required">E-mail: *</span>
-                            <input
+                    <div>                                                    <input
                                 type="email"
                                 class="email"
                                 name="email"
@@ -75,24 +69,20 @@
                             />
                         </label>
                     </div>
-                    <div>
-                        <label for="telefone">
-                            <span class="required">Telefone: *</span>
+                    <div>                                                    
                             <input
                                 type="number"
                                 class="telefone"
                                 name="telefone"
                                 value=""
-                                placeholder="(DDD) + Número"
+                                placeholder="Telefone - (DDD) + Número"
                                 tabindex="2"
                                 required="required"
                             />
                         </label>
                     </div>
                     <div>
-                        <label for="assunto">
-                            <span class="required">Assunto: </span>
-                            <select class="assunto" name="assunto" tabindex="4">
+                                                    <select class="assunto" name="assunto" tabindex="4">
                                 <option selected disabled value="">
                                     Selecione
                                 </option>
@@ -103,8 +93,7 @@
                         </label>
                     </div>
                     <div>
-                        <label for="mensagem">
-                            <span class="required">Menssagem: *</span>
+                        
                             <textarea
                                 class="message"
                                 name="message"
@@ -131,7 +120,7 @@
                         src="../../images/logoBranca.svg"
                         alt=""
                     />
-                    <nav>
+                    <nav class="nav_footer">
                         <ul class="footer__navigation">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="contato.html">Contato</a></li>
@@ -145,7 +134,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <nav>
+                    <nav class="footer_icons">
                     <ul class="footer__social">
                         <li>
                             <a href="#" data-social="facebook"
