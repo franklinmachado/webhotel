@@ -57,3 +57,33 @@
     transition:1s;
 
 }
+
+@media (max-width: 1194px) and (orientation: landscape) {
+ .formulario-container{
+    align-items: center;
+    width: 100%;
+ }
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+ .formulario-container{
+    align-items: center;
+    width: 100%;
+ }
+}
+
+/*mobile*/
+
+@media (max-width: 915px) and (orientation: landscape) {
+   .formulario-cadastro{
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .formulario-cadastro{
+        width: 100%;
+    }
+}
+
