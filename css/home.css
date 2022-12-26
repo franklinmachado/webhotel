@@ -156,7 +156,7 @@ html {
 /* imagem do banner */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("/images/bannerHome.jpg");
+        url("../images/bannerHome.jpg");
     height: 50em;
     background-position: center;
     background-repeat: no-repeat;
@@ -290,28 +290,31 @@ html {
     }
 
     .sobre__text p {
-        font-size: 1.8rem;
-        width: 18ch;
-        box-sizing: border-box;
-        margin-right: 1rem;
+        font-size: 1.4rem;
+        width: 26ch;
+        text-align: center;
+        margin: 2rem auto;
+        margin-left: -2rem;
+
     }
 
     .hero-text h1 {
         color: black;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        margin-top: 4rem;
     }
 
     .cropped1 {
-        max-width: 12em;
-        min-width: 17em;
-        height: 17em;
-        margin-left: 13%;
-        margin-right: 2rem;
+        display: none;
     }
 
     .chale__container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .chale__text a {
+        margin: 39%;
     }
 
     .sobre__flex {
@@ -333,6 +336,38 @@ html {
     }
 
     .gastronomia_text p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        width: 25ch;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    .gastronomia_h2 {
+        width: 18ch;
+        text-align: center;
+    }
+
+    .botaoClaro {
+        margin:2rem auto;
+    }
+
+    .h2__title {
+        font-size: 2rem;
+    }
+
+    .chale__text h2 {
+        margin-left: 8%;
+        text-align: center;
+    }
+
+    .chale__text p {
+        font-size: 1.4rem;
+        width: 26ch;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    .title1 {
+        display: none;
     }
 }

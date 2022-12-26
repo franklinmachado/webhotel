@@ -18,7 +18,7 @@
             hwb(0 100% 0% / 0.815),
             hsla(0, 0%, 100%, 0.573)
         ),
-        url(/images/5332433.jpg) no-repeat;
+        url(../images/5332433.jpg) no-repeat;
     background-size: cover;
 
     background-color: rgba(0, 0, 0, 0);

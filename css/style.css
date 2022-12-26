@@ -21,13 +21,9 @@
     --cor-secundaria: #606c38;
     --cor-apoio: #fac75c;
     --cor-apoio-claro: #fadea3;
-/*     --mobile-landscape: "@media (max-width: 915px) and (orientation: landscape)";
-    --mobile-portrait: "@media (max-width: 414px) and (orientation: portrait)";
-    --tablet-landscape: "@media (max-width: 1194px) and (orientation: landscape)";
-    --tablet-portrait: "@media (max-width: 1024px) and (orientation: portrait)"; */
 }
 
-/* HEADER*/
+/* HEADER */
 
 header {
     display: block;
