@@ -1,7 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
 .main-home {
     width: 1280px;
     margin: auto;
@@ -223,12 +219,7 @@ html {
     }
 }
 
-@media (min-width: 1024px) and (orientation: portrait) {
-    .main-home {
-        width: 100%;
-        margin: auto;
-        box-sizing: border-box;
-    }
+@media (max-width: 1024px) and (orientation: portrait) {
     .cropped1 {
         max-width: 28em;
         min-width: 25em;
@@ -272,7 +263,7 @@ html {
     }
 }
 
-@media (min-width: 414px) and (orientation: portrait) {
+@media (max-width: 414px) and (orientation: portrait) {
     .main-home {
         width: 414px;
     }
@@ -295,7 +286,6 @@ html {
         text-align: center;
         margin: 2rem auto;
         margin-left: -2rem;
-
     }
 
     .hero-text h1 {
@@ -313,8 +303,23 @@ html {
         grid-template-columns: 1fr;
     }
 
+    .chale__text {
+        margin: 0 auto;
+    }
+
     .chale__text a {
         margin: 39%;
+    }
+
+    .chale__text h2 {
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    .chale__text p {
+        font-size: 1.4rem;
+        width: 26ch;
+        text-align: center;
     }
 
     .sobre__flex {
@@ -348,23 +353,11 @@ html {
     }
 
     .botaoClaro {
-        margin:2rem auto;
+        margin: 2rem auto;
     }
 
     .h2__title {
         font-size: 2rem;
-    }
-
-    .chale__text h2 {
-        margin-left: 8%;
-        text-align: center;
-    }
-
-    .chale__text p {
-        font-size: 1.4rem;
-        width: 26ch;
-        text-align: center;
-        margin: 2rem auto;
     }
 
     .title1 {
