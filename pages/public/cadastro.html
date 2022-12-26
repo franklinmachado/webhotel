@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../../css/style.css" />
         <link rel="stylesheet" href="../../css/cadastro.css" />
-        <link rel="stylesheet" href="/docs/header/header.css" />
-        <link rel="stylesheet" href="/docs/footer/footer.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
             rel="stylesheet"
@@ -16,121 +14,137 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <img
-                class="header__logo"
+                class="logo"
                 src="../../images/logoColorida.svg"
-                alt=""
+                alt="logo montanha"
             />
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <nav class="menu">
+                <ul class="listas">
+                    <li>
+                        <a href="../../index.html">Página principal</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Nossas chácaras</a>
+                    </li>
+                    <li>
+                        <a href="acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <div class="formulario-container">
-            <form class="formulario-cadastro">
+            <form action="../../index.html" class="formulario-cadastro">
                 <h2 class="mensagem">Bem vindo a tela de cadastro</h2>
                 <div class="input-container">
-    
-                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo" />
+                    <label>Nome Completo</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" />
                 </div>
                 <div class="input-container">
-                   
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <label> Email </label>
+                    <input type="email" name="email" id="email" />
                 </div>
                 <div class="input-container">
-                   
-                    <input type="password" name="senha" id="senha" placeholder="Senha"/>
+                    <label>Senha</label>
+                    <input type="password" name="senha" id="senha" />
                 </div>
                 <div class="input-container">
-                    
-                    <input type="password" name="confirmarsenha" placeholder="Confirmar Senha"/>
+                    <label>Confirmar Senha</label>
+                    <input type="password" name="confirmarsenha" />
                 </div>
                 <div class="input-container">
-                    
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF" />
+                    <label>CPF</label>
+                    <input type="text" name="cpf" id="cpf" />
                 </div>
                 <div class="input-container">
-                    
-                    <input type="text" name="telefone" id="telefone" placeholder="Telefone"/>
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" id="telefone" />
                 </div>
                 <div class="input-container">
-                    
-                    <input type="date" name="date" id="date" placeholder="Data de Nascimento"/>
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="date" id="date" />
                 </div>
                 <div class="input-container">
-                   
-                    <input type="text" name="cep" id="cep" placeholder="CEP"/>
+                    <label>CEP</label>
+                    <input type="text" name="cep" id="cep" />
                 </div>
                 <div class="botoes">
                     <button class="botaoEscuroMenor">Finalizar</button>
                 </div>
             </form>
-            <!--<img src="../../images/login.webp" class="imagem" alt="" />-->
         </div>
 
         <footer>
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <img
-                        class="footer__logo"
-                        src="../../images/logoBranca.svg"
-                        alt=""
-                    />
-                    <nav>
-                        <ul class="footer__navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li>
-                                <a href="admin/formularioAdmin.html"
-                                    >Administração</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="footer__social">
-                            <li>
-                                <a href="#" data-social="facebook"
-                                    ><span class="sr-only">Facebook</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="instagram"
-                                    ><span class="sr-only">Instagram</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="whatsapp"
-                                    ><span class="sr-only">Whatsapp</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="email"
-                                    ><span class="sr-only">Email</span></a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <span class="copyright"
-                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
-                >
-            </div>
+            <nav class="footerLogin">
+                <img
+                    class="logoFooter"
+                    src="../../images/logoBranca.svg"
+                    alt="logo montanha"
+                />
+                <ul>
+                    <li>
+                        <a href="../../index.html">Página Principal</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Nosso Hotel</a>
+                    </li>
+                    <li>
+                        <a href="acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/facebook.svg"
+                                alt="facebook"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/instagram.svg"
+                                alt="instagram"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/whatsapp.svg"
+                                alt="whatsapp"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><img
+                                class="social"
+                                src="/images/o-email.svg"
+                                alt="email"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copyright">
+                &copy Todos os direitos reservados - 2022 - Equipe 3
+            </p>
         </footer>
     </body>
 </html>
