@@ -5,7 +5,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Montserrat, arial, sans-serif;
 }
@@ -15,7 +14,7 @@
     display: block;
     color: #c0c0c0;
     background: linear-gradient(
-            hwb(0 100% 0% / 0.815),
+            hwb(0 100% 0% / 0.914),
             hsla(0, 0%, 100%, 0.573)
         ),
         url(/images/5332433.jpg) no-repeat;
@@ -76,12 +75,13 @@ input[type="number"] {
     box-sizing: border-box;
     padding-inline: 0.5em 0;
     width: 100%;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: 0;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 0.3em;
     margin-bottom: 1em;
+    font-style: italic;
 }
 
 .contact-form input:focus,
@@ -107,8 +107,9 @@ input[type="number"] {
     border-radius: 5em;
 }
 .contact-form button[type="submit"]:hover {
-    color: #fff7e4;
-    background-color: #364420;
+    color: #283618;
+    font-weight: 700;
+    background-color: #fadea3;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
