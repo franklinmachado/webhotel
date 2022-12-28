@@ -3,76 +3,72 @@
 }
 
 .footer__wrapper {
-    width: 85%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-base);
+    width: 90%;
     max-width: 1280px;
     margin-inline: auto;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    justify-content: center;
-    padding-block: 1rem;
-}
-
-.nav_footer {
-    display: flex;
+    padding-block: var(--spacing-base);
 }
 
 .footer__logo {
     height: calc(64px + 5vh);
 }
+
 .footer__navigation {
+    justify-content: center;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: var(--spacing-base);
     list-style: none;
 }
 
 .footer__navigation li a {
     color: var(--cor-letra-clara);
-    font-size: 1.1rem;
     font-weight: 500;
-    text-decoration: none;
 }
 
 .footer__social {
+    justify-content: center;
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-base);
     list-style: none;
 }
+
 .footer__social li a {
-    text-decoration: none;
-}
-.footer__social li a {
+    aspect-ratio: 1;
     display: inline-block;
     width: 32px;
-    height: 32px;
     background-size: cover;
 }
+
 .footer__social li a[data-social="facebook"] {
     background-image: url("../../images/facebook.svg");
 }
+
 .footer__social li a[data-social="instagram"] {
     background-image: url("../../images/instagram.svg");
 }
+
 .footer__social li a[data-social="whatsapp"] {
     background-image: url("../../images/whatsapp.svg");
 }
+
 .footer__social li a[data-social="email"] {
     background-image: url("../../images/o-email.svg");
 }
+
 .copyright {
     background-color: var(--background-primario-claro);
     display: block;
-    padding-block: 1rem;
+    font-size: var(--text-md);
+    padding-block: var(--spacing-sm);
     text-align: center;
 }
 
 @media (max-width: 1194px) and (orientation: landscape) {
-    .footer__wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .footer__navigation {
         flex-direction: row;
     }
@@ -80,33 +76,15 @@
 
 @media (max-width: 1024px) and (orientation: portrait) {
     .footer__wrapper {
-        text-align: center;
-        display: block;
-    }
-
-    .nav_footer {
-        display: none;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
-    .footer__wrapper {
-        text-align: center;
-        display: block;
-    }
-
-    .nav_footer {
-        display: none;
-    }
 }
 
 @media (max-width: 414px) and (orientation: portrait) {
-    .footer__wrapper {
-        text-align: center;
-        display: block;
-    }
-
-    .nav_footer {
+    .footer__logo {
         display: none;
     }
 }

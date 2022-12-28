@@ -1,0 +1,67 @@
+.header__logo__container {
+    background-color: var(--background-primario-claro);
+    padding-block: var(--spacing-base);
+}
+
+.header__logo__img {
+    display: block;
+    height: calc(96px + 10vh);
+    margin-inline: auto;
+}
+
+.header__container {
+    background-color: var(--background-escuro);
+}
+
+.header__wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.main-navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    justify-content: space-between;
+    list-style: none;
+    padding-block: var(--spacing-lg);
+}
+
+.main-navigation li a {
+    --spacing: 0.1em;
+    --color: var(--cor-destaque);
+    font-size: var(--text-base);
+    color: var(--cor-letra-clara);
+    padding-bottom: var(--spacing-sm);
+    background: linear-gradient(90deg, var(--color) 50%, #000 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--color) 0 0) 0% 100% / var(--_p, 0%) var(--spacing)
+            no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.main-navigation li a:hover {
+    --_p: 100%;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .main-navigation {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .main-navigation {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .main-navigation {
+        flex-direction: column;
+    }
+}
