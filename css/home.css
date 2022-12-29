@@ -48,6 +48,7 @@
 .sobre__flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .sobre__flex img {
@@ -126,6 +127,11 @@ html {
     color: var(--cor-letra-clara);
 }
 
+.botaoEscuroMenor a {
+    color: var(--cor-letra-clara);
+    text-decoration: none;
+}
+
 .botaoEscuroMenor:hover {
     background-color: #c4972e;
     color: var(--cor-letra-clara);
@@ -141,6 +147,10 @@ html {
     padding: 1em;
     border-radius: 10px;
     background-color: var(--background-escuro);
+}
+
+.botaoEscuroMaior a {
+    text-decoration: none;
     color: var(--cor-letra-clara);
 }
 
@@ -185,7 +195,7 @@ html {
 
 /*Tablet*/
 
-@media (max-width: 1194px) and (orientation: landscape) {
+@media (max-width: 1194px) {
     .main-home {
         width: 100%;
         margin: auto;
@@ -219,7 +229,7 @@ html {
     }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (max-width: 1024px) {
     .cropped1 {
         max-width: 28em;
         min-width: 25em;
@@ -250,7 +260,7 @@ html {
 
 /*mobile*/
 
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 915px) {
     .sobre__flex img {
         width: 200px;
         margin-top: 2rem;
@@ -263,11 +273,12 @@ html {
     }
 }
 
-@media (max-width: 414px) and (orientation: portrait) {
-    .main-home {
+@media (max-width: 414px) {
+    body {
         width: 414px;
     }
 
+    /*hero*/
     .hero-image {
         background: none;
         height: auto;
@@ -280,14 +291,6 @@ html {
         position: none;
     }
 
-    .sobre__text p {
-        font-size: 1.4rem;
-        width: 26ch;
-        text-align: center;
-        margin: 2rem auto;
-        margin-left: -2rem;
-    }
-
     .hero-text h1 {
         color: black;
         font-size: 1.5rem;
@@ -298,28 +301,36 @@ html {
         display: none;
     }
 
+    /*chale*/
     .chale__container {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 0;
     }
 
     .chale__text {
         margin: 0 auto;
     }
 
-    .chale__text a {
-        margin: 39%;
-    }
-
     .chale__text h2 {
-        margin-left: 20%;
         text-align: center;
+        margin-bottom: 4%;
     }
 
     .chale__text p {
         font-size: 1.4rem;
         width: 26ch;
         text-align: center;
+        margin: 0 auto;
+    }
+
+    /*sobre*/
+    .sobre__text p {
+        font-size: 1.4rem;
+        width: 25ch;
+        text-align: center;
+        margin: 2rem auto;
+        margin-left: -2rem;
     }
 
     .sobre__flex {
@@ -327,10 +338,16 @@ html {
         grid-template-columns: 1fr;
     }
 
-    .botaoEscuroMaior {
-        min-width: auto;
+    .sobre__flex img {
+        margin: 0.8rem 0;
+        padding: 0;
     }
 
+    .sobre__text p {
+        margin-top: 0;
+    }
+
+    /*gastronomia*/
     .gastronomia_container {
         display: grid;
         grid-template-columns: 1fr;
@@ -338,13 +355,15 @@ html {
 
     .gastronomia_text {
         width: 28ch;
+        padding-top: 1.5rem;
     }
 
     .gastronomia_text p {
         font-size: 1.4rem;
-        width: 25ch;
+        width: 26ch;
         text-align: center;
         margin: 2rem auto;
+        margin-right: 0;
     }
 
     .gastronomia_h2 {
@@ -352,15 +371,45 @@ html {
         text-align: center;
     }
 
-    .botaoClaro {
-        margin: 2rem auto;
-    }
-
     .h2__title {
         font-size: 2rem;
+        padding-left: 0;
     }
 
     .title1 {
         display: none;
+    }
+
+    /*botoes*/
+    .botaoClaro {
+        margin: 2rem auto;
+    }
+
+    .botaoEscuroMenor a {
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    div .botaoEscuroMenor {
+        display: block;
+        white-space: nowrap;
+        margin: 2rem auto;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: none;
+        padding: 1em;
+        border-radius: 25px;
+    }
+
+    .sobre__text .botaoEscuroMaior {
+        min-width: auto;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: none;
+        padding: 1em;
+        border-radius: 25px;
     }
 }
