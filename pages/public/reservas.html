@@ -33,7 +33,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="main_reserva">
             <section class="reserva_check_in">
                 <div class="reserva_check_in_h1">
                     <h1>Minha reserva</h1>
@@ -63,9 +63,9 @@
                             required
                         />
                     </div>
-                    <div class="q1">
+                    <div class="q1 reserva_conteudo">
                         <label for="quantidade_pessoas"
-                            >Quantidade de pessoas</label
+                            >Número de pessoas</label
                         >
                         <input
                             type="number"
@@ -101,7 +101,7 @@
                                 precisa para relaxar em grande estilo.
                             </p>
                             <span>R$ 999.99</span>
-                            <div>
+                            <div class="reserva_radio">
                                 <label class="reserva_label" for="ofuro"
                                     >Selecionar o Chalé Ofurô</label
                                 >
@@ -131,7 +131,7 @@
                                 banheiro e lareira para os dias de frio.
                             </p>
                             <span>R$ 888,88</span>
-                            <div>
+                            <div class="reserva_radio">
                                 <label class="reserva_label" for="master"
                                     >Selecionar o Chalé Master</label
                                 >
@@ -154,19 +154,15 @@
                             <h2>Luxo Fámilia</h2>
                             <p>
                                 O Chalé Luxo Família é ideal para famílias de
-                                até 4 pessoas. Eles são totalmente equipados e
-                                charmosos. Possui uma encantadora vista do vale
-                                e do lago e uma aconchegante lareira para os
-                                dias de frio. Conta com uma linda área externa,
-                                varanda privativa com um convidativo ofurô.
-                                Toques extras incluem lençóis de algodão egípcio
-                                200 fios, frigobar, televisão e ar condicionado
-                                no quarto.
+                                até 4 pessoas. Possui uma encantadora vista do
+                                vale e do lago e uma aconchegante lareira para
+                                os dias de frio. Conta com uma linda área
+                                externa e varanda privativa.
                             </p>
                             <span>R$ 777,77</span>
-                            <div>
+                            <div class="reserva_radio">
                                 <label class="reserva_label" for="luxo_familia"
-                                    >Selecionar o Chalé Luxo Fámilia</label
+                                    >Selecionar o Chalé Família</label
                                 >
                                 <input
                                     type="radio"
@@ -180,10 +176,24 @@
                 <div class="previewer">
                     <h3>Resumo da reserva</h3>
                     <div class="previewer_conteudo">
-                        <p><b>Apartamento: </b><span>xxxx</span></p>
-                        <p><b>Check-in: </b><span>11/22/3333</span></p>
-                        <p><b>Check-out: </b><span>11/22/3333</span></p>
-                        <p><b>Pessoas: </b><span>x</span></p>
+                        <p>
+                            <b>Apartamento:<br /> </b><span>xxxx</span>
+                        </p>
+                        <p>
+                            <b>Check-in:<br /> </b><span>11/22/3333</span>
+                        </p>
+                        <p>
+                            <b>Check-out:<br /> </b><span>11/22/3333</span>
+                        </p>
+                        <p>
+                            <b>Pessoas:<br /> </b><span>x</span>
+                        </p>
+                    </div>
+                    <div class="servicos">
+                        <h4>Adicionar mais SERVIÇOS</h4>
+                    </div>
+                    <div class="previewer_botao">
+                        <button type="submit">Continuar</button>
                     </div>
                 </div>
             </article>
