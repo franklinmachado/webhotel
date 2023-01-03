@@ -11,14 +11,14 @@ div {
     padding: 0;
 }
 
-main {
+.main_reserva {
     width: 80%;
     margin: 0 auto;
     padding: 0;
     position: relative;
 }
 
-article {
+.article_reserva {
     margin: 6vh 0;
 }
 /*section reserva*/
