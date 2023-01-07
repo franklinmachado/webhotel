@@ -109,4 +109,8 @@
     .nav_footer {
         display: none;
     }
+
+    .footer__navigation {
+        display: grid;
+    }
 }

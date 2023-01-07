@@ -42,6 +42,10 @@
     .main-navigation {
         flex-direction: column;
     }
+    
+    header nav ul {
+        display: grid;
+    }
 }
 
 .main-navigation li a {
