@@ -1,0 +1,23 @@
+@for $i from 2 through 8 {
+    .gap-#{$i} {
+        gap: #{$i / 4}rem;
+    }
+}
+
+@for $i from 1 through 8 {
+    .my-#{$i} {
+        margin-block: #{$i / 4}rem;
+    }
+
+    .mx-#{$i} {
+        margin-inline: #{$i / 4}rem;
+    }
+
+    .py-#{$i} {
+        padding-block: #{$i / 4}rem;
+    }
+
+    .px-#{$i} {
+        padding-inline: #{$i / 4}rem;
+    }
+}
