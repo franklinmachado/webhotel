@@ -4,10 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="../../css/acomodacoes.css" />
-
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../docs/header/header.css">
+        <link rel="stylesheet" href="../../docs/footer/footer.css">
         <title>Acomodações</title>
     </head>
     <body>
@@ -27,7 +26,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main_acomodaçoes">
             <div class="acomodacoes_text">
                 <h1>Nossas Acomodações</h1>
                 <p>
@@ -43,7 +42,7 @@
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/chaleofuro.webp"
+                            src="../../images/chaleofuro.webp"
                             title="Chalé com Ofurô"
                         />
                         <p class="acom_text">Chalé com Ofurô</p>
@@ -51,16 +50,15 @@
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/master.webp"
-                            title="Chalé Master com Hidromassagem
-"
+                            src="../../images/master.webp"
+                            title="Chalé Master com Hidromassagem"
                         />
                         <p class="acom_text">Chalé Master</p>
                     </div>
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/familia.webp"
+                            src="../../images/familia.webp"
                             title="Chalés Luxo Família"
                         />
                         <p class="acom_text">Chalés Luxo Família</p>
@@ -68,7 +66,7 @@
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/prime.png"
+                            src="../../images/prime.png"
                             title="Chalé Prime"
                         />
                         <p class="acom_text">Chalé Prime</p>
@@ -76,7 +74,7 @@
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/deluxe.png"
+                            src="../../images/deluxe.png"
                             title="Chalé Deluxe"
                         />
                         <p class="acom_text">Chalé Deluxe</p>
@@ -108,7 +106,7 @@
                     <div>
                         <img
                             class="acomodacoes_img"
-                            src="/images/Minichalé.webp"
+                            src="../../images/Minichalé.webp"
                             title="Minichalé"
                         />
                         <p class="acom_text">Minichalé</p>
@@ -125,7 +123,7 @@
                             o bosque, são equipadas com tudo o que você precisa
                             para relaxar em grande estilo
                         </p>
-                        <a href="/pages/public/reservas.html">
+                        <a href="reservas.html">
                             <button class="botaoEscuroMenor">
                                 Reserve agora!
                             </button></a
@@ -134,7 +132,7 @@
                     <div>
                         <img
                             class="destaque_img"
-                            src="/images/chaleofuro.webp"
+                            src="../../images/chaleofuro.webp"
                             title="Chalé com Ofurô"
                         />
                         <p class="acom_text">Chalé com Ofurô</p>
@@ -142,67 +140,58 @@
                 </article>
             </section>
         </main>
-        <hr />
-        <footer>
-            <nav class="footer">
-                <img
-                    class="logoFooter"
-                    src="../../images/logoBranca.svg"
-                    alt="logo montanha"
-                />
-                <ul>
-                    <li>
-                        <a href="../../index.html">Página Principal</a>
-                    </li>
-                    <li>
-                        <a href="sobre.html">Nosso Hotel</a>
-                    </li>
-                    <li>
-                        <a href="reservas.html">Reservas</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                </ul>
 
-                <ul>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/facebook.svg"
-                                alt="facebook"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/instagram.svg"
-                                alt="instagram"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/whatsapp.svg"
-                                alt="whatsapp"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/o-email.svg"
-                                alt="email"
-                        /></a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                &copy Todos os direitos reservados - 2022 - Equipe 3
-            </p>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <img
+                        class="footer__logo"
+                        src="../../images/logoBranca.svg"
+                        alt=""
+                    />
+                    <nav>
+                        <ul class="footer__navigation">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li>
+                                <a href="../admin/formularioAdmin.html"
+                                    >Administração</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#" data-social="facebook"
+                                ><span class="sr-only">Facebook</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" data-social="instagram"
+                                ><span class="sr-only">Instagram</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" data-social="whatsapp"
+                                ><span class="sr-only">Whatsapp</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" data-social="email"
+                                ><span class="sr-only">Email</span></a
+                            >
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+                <span class="copyright"
+                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
+                >
+            </div>
         </footer>
     </body>
 </html>
