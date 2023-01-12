@@ -4,34 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/home.css" />
-        <title>Montseny - home</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Montseny</title>
     </head>
     <body>
-        <header class="header">
-            <img
-                class="logo"
-                src="../../images/logoColorida.svg"
-                alt="logo montanha"
-            />
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="/pages/public/sobre.html">Nosso Hotel</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/acomodacoes.html">Acomodações</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/reservas.html">Reservas</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/contato.html">Contato</a>
-                    </li>
-                    <li><a href="/pages/public/login.html">Login</a></li>
-                </ul>
-            </nav>
+        <header>
+            <div class="header__logo__container">
+                <img
+                    class="header__logo__img"
+                    src="../../images/logoColorida.svg"
+                    alt=""
+                />
+            </div>
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <nav>
+                        <ul class="main-navigation">
+                            <li>
+                                <a href="../../index.html">Página principal</a>
+                            </li>
+                            <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <div class="hero-image">
@@ -42,7 +42,7 @@
                     ><br />
                     do sul de Minas Gerais
                 </h1>
-                <a href="/pages/public/acomodacoes.html">
+                <a href="pages/public/acomodacoes.html">
                     <button class="botaoClaro">
                         Conheça nossos chalés!
                     </button></a
@@ -50,19 +50,18 @@
             </div>
         </div>
 
-        <main>
+        <main class="main-home">
             <article class="chale__section">
                 <div>
-                    <h2 class="h2__title">Sobre os nossos chalés</h2>
+                    <h2 class="h2__title title1">Sobre os nossos chalés</h2>
                     <div class="chale__container">
                         <div class="chale__image">
                             <img
                                 class="cropped1"
-                                src="/images/Chalé home.jpg"
+                                src="images/Chalé home.jpg"
                                 alt="Chalé luxo"
                             />
                         </div>
-
                         <div class="chale__text">
                             <h2>
                                 Chalés e cabanas encantadas em meio ao bosque de
@@ -75,11 +74,13 @@
                                 conforto que você merece em sua visita a Monte
                                 Verde.
                             </p>
-                            <a href="/pages/public/acomodacoes.html">
+                            <div>
                                 <button class="botaoEscuroMenor">
-                                    Escolha o seu!
-                                </button></a
-                            >
+                                    <a href="pages/public/reservas.html"
+                                        >Escolha o seu!</a
+                                    >
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,16 +92,13 @@
                 </h2>
                 <div class="sobre__flex">
                     <div>
-                        <img src="/images/01.webp" alt="quarto com ofuro" />
+                        <img src="images/01.webp" alt="quarto com ofuro" />
                     </div>
                     <div>
-                        <img
-                            src="/images/02.webp"
-                            alt="um quarto com lareira"
-                        />
+                        <img src="images/02.webp" alt="um quarto com lareira" />
                     </div>
                     <div>
-                        <img src="/images/03.webp" alt="quarto grande" />
+                        <img src="images/03.webp" alt="quarto grande" />
                     </div>
                 </div>
                 <div class="sobre__text">
@@ -111,11 +109,11 @@
                         casais ou para até 6 pessoas.
                     </p>
 
-                    <a href="/pages/public/acomodacoes.html">
-                        <button class="botaoEscuroMaior">
-                            Conheça mais sobre os nossos serviços!
-                        </button></a
-                    >
+                    <button class="botaoEscuroMaior">
+                        <a href="pages/public/sobre.html"
+                            >Conheça mais sobre os nossos serviços!</a
+                        >
+                    </button>
                 </div>
             </section>
 
@@ -137,7 +135,7 @@
                         <div class="gastronomia_image">
                             <img
                                 class="cropped1"
-                                src="/images/cafedamanha1.webp"
+                                src="images/cafedamanha1.webp"
                                 alt="Chalé luxo"
                             />
                         </div>
@@ -147,65 +145,57 @@
         </main>
 
         <footer>
-            <nav class="footer">
-                <img
-                    class="logoFooter"
-                    src="../../images/logoBranca.svg"
-                    alt="logo montanha"
-                />
-                <ul>
-                    <li>
-                        <a href="/pages/public/sobre.html">Nosso Hotel</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/acomodacoes.html">Acomodações</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/reservas.html">Reservas</a>
-                    </li>
-                    <li>
-                        <a href="/pages/public/contato.html">Contato</a>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/facebook.svg"
-                                alt="facebook"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/instagram.svg"
-                                alt="instagram"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/whatsapp.svg"
-                                alt="whatsapp"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><img
-                                class="social"
-                                src="/images/o-email.svg"
-                                alt="email"
-                        /></a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                &copy Todos os direitos reservados - 2022 - Equipe 3
-            </p>
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <img
+                        class="footer__logo"
+                        src="../../images/logoBranca.svg"
+                        alt=""
+                    />
+                    <nav>
+                        <ul class="footer__navigation">
+                            <li>
+                                <a href="../../index.html">Página principal</a>
+                            </li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="acomodacoes.html">Acomodações</a></li>
+                            <li>
+                                <a href="../admin/formularioAdmin.html"
+                                    >Administração</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul role="list" class="footer__social">
+                            <li>
+                                <a href="#" data-social="facebook"
+                                    ><span class="sr-only">Facebook</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="instagram"
+                                    ><span class="sr-only">Instagram</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="whatsapp"
+                                    ><span class="sr-only">Whatsapp</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-social="email"
+                                    ><span class="sr-only">Email</span></a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <span class="copyright"
+                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
+                >
+            </div>
         </footer>
     </body>
 </html>

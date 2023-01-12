@@ -1,3 +1,5 @@
+@use "sass-utils/variaveis.scss" as v;
+
 .hero-image {
     background-image: url("../images/sobre.webp");
     height: calc(20rem + 10vh);
@@ -12,50 +14,42 @@
     max-width: 1280px;
     display: flex;
     flex-direction: column;
-    margin-block: var(--spacing-2xl);
+    margin-block: v.$spacing-2xl;
 }
-
 .hero__content {
     text-align: center;
-    margin-block: var(--spacing-2xl);
+    margin-block: v.$spacing-2xl;
+    h1 {
+        line-height: 1.5;
+    }
+    p {
+        font-size: v.$text-lg;
+        max-width: 70ch;
+        margin-inline: auto;
+    }
 }
-
-.hero__content h1 {
-    line-height: 1.5;
-}
-
-.hero__content p {
-    font-size: var(--text-lg);
-    max-width: 70ch;
-    margin-inline: auto;
-}
-
 .chales__section {
-    margin-block: var(--spacing-2xl);
+    margin-block: v.$spacing-2xl;
     text-align: center;
+    p {
+        max-width: 70ch;
+        margin-inline: auto;
+        font-size: v.$text-lg;
+        h2 {
+            line-height: 1.5;
+        }
+    }
 }
-
-.chales__section p {
-    max-width: 70ch;
-    margin-inline: auto;
-    font-size: var(--text-lg);
-}
-
-.chales__section h2 {
-    line-height: 1.5;
-}
-
 .main__gallery {
     display: grid;
-    gap: var(--spacing-base);
+    gap: v.$spacing-base;
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-    margin-block: var(--spacing-2xl);
-}
-
-.main__gallery img {
-    width: 100%;
-    height: calc(128px + 15vh);
-    border-radius: 6px;
+    margin-block: v.$spacing-2xl;
+    img {
+        width: 100%;
+        height: calc(128px + 15vh);
+        border-radius: 6px;
+    }
 }
 
 .map {
@@ -66,25 +60,23 @@
     height: 50vh;
     width: 100%;
 }
-
 .botaoEscuroMaior2 {
     display: block;
     margin-inline: auto;
-    margin-block: var(--spacing-xl);
+    margin-block: v.$spacing-xl;
     border: 0;
     font-weight: 500;
-    padding-block: var(--spacing-sm);
-    padding-inline: var(--spacing-lg);
+    padding-block: v.$spacing-sm;
+    padding-inline: v.$spacing-lg;
     border-radius: 8px;
-    background-color: var(--background-escuro);
-    color: var(--cor-letra-clara);
+    background-color: v.$background-escuro;
+    color: v.$cor-letra-clara;
     width: fit-content;
 }
-
 .botaoEscuroMaior2:hover {
     background-color: #c4972e;
 }
-
 .map {
     -webkit-filter: grayscale(100%);
 }
+
