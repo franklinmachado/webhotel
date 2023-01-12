@@ -1,0 +1,82 @@
+@use "sass-utils/variaveis.scss" as v;
+
+.hero-image {
+    background-image: url("../images/sobre.webp");
+    height: calc(20rem + 10vh);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__container {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    margin-block: v.$spacing-2xl;
+}
+.hero__content {
+    text-align: center;
+    margin-block: v.$spacing-2xl;
+    h1 {
+        line-height: 1.5;
+    }
+    p {
+        font-size: v.$text-lg;
+        max-width: 70ch;
+        margin-inline: auto;
+    }
+}
+.chales__section {
+    margin-block: v.$spacing-2xl;
+    text-align: center;
+    p {
+        max-width: 70ch;
+        margin-inline: auto;
+        font-size: v.$text-lg;
+        h2 {
+            line-height: 1.5;
+        }
+    }
+}
+.main__gallery {
+    display: grid;
+    gap: v.$spacing-base;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    margin-block: v.$spacing-2xl;
+    img {
+        width: 100%;
+        height: calc(128px + 15vh);
+        border-radius: 6px;
+    }
+}
+
+.map {
+    display: block;
+    border: none;
+    margin-inline: auto;
+    max-width: 42rem;
+    height: 50vh;
+    width: 100%;
+}
+.botaoEscuroMaior2 {
+    display: block;
+    margin-inline: auto;
+    margin-block: v.$spacing-xl;
+    border: 0;
+    font-weight: 500;
+    padding-block: v.$spacing-sm;
+    padding-inline: v.$spacing-lg;
+    border-radius: 8px;
+    background-color: v.$background-escuro;
+    color: v.$cor-letra-clara;
+    width: fit-content;
+}
+.botaoEscuroMaior2:hover {
+    background-color: #c4972e;
+}
+.map {
+    -webkit-filter: grayscale(100%);
+}
+
