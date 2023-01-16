@@ -1,228 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="docs/header/header.css" />
-        <link rel="stylesheet" href="docs/footer/footer.css" />
-        <script src="/js/formulário.js" async></script>
-        <script src="/js/banner.js" async></script>
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Montseny</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo-container">
-                <div></div>
-                <img
-                    class="header__logo"
-                    src="../../images/logoColorida.svg"
-                    alt=""
-                />
-                <div class="login">
-                    <span id="mensagem">
-                        Fazer
-                        <a href="/pages/public/login.html">login</a>
-                    </span>
-                    <span id="logado">
-                        <span id="nome"></span>
-                            <a id="sair"></a>
-                </div>
-            </div>
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="../../index.html">Home</a></li>
-                            <li>
-                                <a href="/pages/public/sobre.html"
-                                    >Nosso hotel</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/acomodacoes.html"
-                                    >Acomodações</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/reservas.html"
-                                    >Reservas</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/contato.html">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="/js/formulário.js" async></script>
+    <script src="/js/banner.js" async></script>
+    <title>Montseny</title>
+</head>
 
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1 id="slogan">
-                    Lugar de paz e tranquilidade<br /><b
-                        >em meio à natureza exuberante</b
-                    ><br />
-                    do sul de Minas Gerais
-                </h1>
-                <a href="pages/public/acomodacoes.html">
-                    <button class="botaoClaro">
-                        Conheça nossos chalés!
-                    </button></a
-                >
+<body>
+    <header>
+        <div class="logo-container">
+            <div></div>
+            <img class="header__logo" src="../../images/logoColorida.svg" alt="Logo do Montseny" />
+
+            <div class="login">
+                <span id="mensagem">
+                    <p>Fazer <a href="/pages/public/login.html">login</a>
+                    </p>
+                </span>
+                <span id="logado">
+                    <span id="nome"></span>
+                    <a id="sair"></a>
             </div>
         </div>
-
-        <main class="main-home">
-            <article class="chale__section">
-                <div>
-                    <h2 class="h2__title title1">Sobre os nossos chalés</h2>
-                    <div class="chale__container">
-                        <div class="chale__image">
-                            <img
-                                class="cropped1"
-                                src="images/Chalé home.jpg"
-                                alt="Chalé luxo"
-                            />
-                        </div>
-                        <div class="chale__text">
-                            <h2>
-                                Chalés e cabanas encantadas em meio ao bosque de
-                                mata nativa
-                            </h2>
-                            <p>
-                                Preparamos 9 tipos de Chalés em nosso hotel,
-                                posicionados para a estonteante vista, com muita
-                                privacidade e equipados com a sofisticação e o
-                                conforto que você merece em sua visita a Monte
-                                Verde.
-                            </p>
-                            <div>
-                                <button class="botaoEscuroMenor">
-                                    <a href="pages/public/acomodacoes.html"
-                                        >Escolha o seu!</a
-                                    >
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <section class="sobre__container">
-                <h2 class="h2__title">
-                    Você vai se encantar com as nossas acomodações!
-                </h2>
-                <div class="sobre__flex">
-                    <div>
-                        <img src="images/01.webp" alt="quarto com ofuro" />
-                    </div>
-                    <div>
-                        <img src="images/02.webp" alt="um quarto com lareira" />
-                    </div>
-                    <div>
-                        <img src="images/03.webp" alt="quarto grande" />
-                    </div>
-                </div>
-                <div class="sobre__text">
-                    <p>
-                        Para quem busca privacidade, aconchego e tranquilidade,
-                        nossos chalés oferecem lareira, hidromassagem ou ofurô e
-                        exclusividade! Cada chalé é único, temos chalés para
-                        casais ou para até 6 pessoas.
-                    </p>
-
-                    <button class="botaoEscuroMaior">
-                        <a href="pages/public/acomodacoes.html"
-                            >Conheça mais sobre os nossos serviços!</a
-                        >
-                    </button>
-                </div>
-            </section>
-
-            <article class="gastronomia_container">
-                <div class="gastronomia_text">
-                    <h2 class="gastronomia_h2">
-                        Café da manhã colonial preparado artesanalmente todos os
-                        dias
-                    </h2>
-                    <p>
-                        Nada mais delicioso do que acordar com cheirinho de bolo
-                        saindo do forno! Tenha a certeza de começar o dia com
-                        uma variedade de pães, bolos, frios e bebidas quentes.
-                    </p>
-                </div>
-
-                <div>
-                    <div class=".gastronomia_container">
-                        <div class="gastronomia_image">
-                            <img
-                                class="cropped1"
-                                src="images/cafedamanha1.webp"
-                                alt="Chalé luxo"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </main>
-
-        <footer>
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <img
-                        class="footer__logo"
-                        src="../../images/logoBranca.svg"
-                        alt=""
-                    />
-                    <nav>
-                        <ul class="footer__navigation">
-                            <li>
-                                <a href="../../index.html">Página principal</a>
-                            </li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li>
-                                <a href="../admin/formularioAdmin.html"
-                                    >Administração</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul role="list" class="footer__social">
-                            <li>
-                                <a href="#" data-social="facebook"
-                                    ><span class="sr-only">Facebook</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="instagram"
-                                    ><span class="sr-only">Instagram</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="whatsapp"
-                                    ><span class="sr-only">Whatsapp</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="email"
-                                    ><span class="sr-only">Email</span></a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <span class="copyright"
-                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
-                >
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav>
+                    <ul class="main-navigation">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li>
+                            <a href="/pages/public/sobre.html">Nosso hotel</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/acomodacoes.html">Acomodações</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/reservas.html">Reservas</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </footer>
-    </body>
+        </div>
+    </header>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 id="slogan">
+                Lugar de paz e tranquilidade<br /><b>em meio à natureza exuberante</b><br />
+                do sul de Minas Gerais
+            </h1>
+            <a href="pages/public/acomodacoes.html">
+                <button class="botaoClaro">
+                    Conheça nossos chalés!
+                </button></a>
+        </div>
+    </div>
+
+    <main class="main-home">
+        <article class="chale__section">
+            <div>
+                <h2 class="h2__title title1">Sobre os nossos chalés</h2>
+                <div class="chale__container">
+                    <div class="chale__image">
+                        <img class="cropped1" src="images/Chalé home.jpg" alt="Chalé luxo" />
+                    </div>
+                    <div class="chale__text">
+                        <h2>
+                            Chalés e cabanas encantadas em meio ao bosque de
+                            mata nativa
+                        </h2>
+                        <p>
+                            Preparamos 9 tipos de Chalés em nosso hotel,
+                            posicionados para a estonteante vista, com muita
+                            privacidade e equipados com a sofisticação e o
+                            conforto que você merece em sua visita a Monte
+                            Verde.
+                        </p>
+                        <div>
+                            <button class="botaoEscuroMenor">
+                                <a href="pages/public/acomodacoes.html">Escolha o seu!</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="sobre__container">
+            <h2 class="h2__title">
+                Você vai se encantar com as nossas acomodações!
+            </h2>
+            <div class="sobre__flex">
+                <div>
+                    <img src="images/01.webp" alt="quarto com ofuro" />
+                </div>
+                <div>
+                    <img src="images/02.webp" alt="um quarto com lareira" />
+                </div>
+                <div>
+                    <img src="images/03.webp" alt="quarto grande" />
+                </div>
+            </div>
+            <div class="sobre__text">
+                <p>
+                    Para quem busca privacidade, aconchego e tranquilidade,
+                    nossos chalés oferecem lareira, hidromassagem ou ofurô e
+                    exclusividade! Cada chalé é único, temos chalés para
+                    casais ou para até 6 pessoas.
+                </p>
+
+                <button class="botaoEscuroMaior">
+                    <a href="pages/public/acomodacoes.html">Conheça mais sobre os nossos serviços!</a>
+                </button>
+            </div>
+        </section>
+
+        <article class="gastronomia_container">
+            <div class="gastronomia_text">
+                <h2 class="gastronomia_h2">
+                    Café da manhã colonial preparado artesanalmente todos os
+                    dias
+                </h2>
+                <p>
+                    Nada mais delicioso do que acordar com cheirinho de bolo
+                    saindo do forno! Tenha a certeza de começar o dia com
+                    uma variedade de pães, bolos, frios e bebidas quentes.
+                </p>
+            </div>
+
+            <div>
+                <div class=".gastronomia_container">
+                    <div class="gastronomia_image">
+                        <img class="cropped1" src="images/cafedamanha1.webp" alt="Chalé luxo" />
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="../../images/logoBranca.svg" alt="" />
+                <nav>
+                    <ul class="footer__navigation">
+                        <li>
+                            <a href="../../index.html">Página principal</a>
+                        </li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li>
+                            <a href="../admin/formularioAdmin.html">Administração</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul role="list" class="footer__social">
+                        <li>
+                            <a href="#" data-social="facebook"><span class="sr-only">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="instagram"><span class="sr-only">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="whatsapp"><span class="sr-only">Whatsapp</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="email"><span class="sr-only">Email</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="copyright">&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </div>
+    </footer>
+</body>
+
 </html>

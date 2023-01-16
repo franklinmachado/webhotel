@@ -165,7 +165,7 @@ html {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('../images/bannerHome.jpg');
-    height: 50em;
+    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
