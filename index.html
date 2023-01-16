@@ -7,43 +7,62 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="docs/header/header.css" />
         <link rel="stylesheet" href="docs/footer/footer.css" />
+        <script src="/js/formulário.js" async></script>
+        <script src="/js/banner.js" async></script>
         <title>Montseny</title>
     </head>
     <body>
         <header>
-            <img class="header__logo" src="images/logoColorida.svg" alt="" />
+            <div class="logo-container">
+                <div></div>
+                <img
+                    class="header__logo"
+                    src="../../images/logoColorida.svg"
+                    alt=""
+                />
+                <div class="login">
+                    <span id="mensagem">
+                        Fazer
+                        <a href="/pages/public/login.html">login</a>
+                    </span>
+                    <span id="logado">
+                        <span id="nome"></span>
+                            <a id="sair"></a>
+                </div>
+            </div>
             <div class="header__container">
                 <div class="header__wrapper">
                     <nav>
                         <ul class="main-navigation">
+                            <li><a href="../../index.html">Home</a></li>
                             <li>
-                                <a href="pages/public/sobre.html"
-                                    >Nossas hotel</a
+                                <a href="/pages/public/sobre.html"
+                                    >Nosso hotel</a
                                 >
                             </li>
                             <li>
-                                <a href="pages/public/acomodacoes.html"
+                                <a href="/pages/public/acomodacoes.html"
                                     >Acomodações</a
                                 >
                             </li>
                             <li>
-                                <a href="pages/public/reservas.html"
+                                <a href="/pages/public/reservas.html"
                                     >Reservas</a
                                 >
                             </li>
                             <li>
-                                <a href="pages/public/contato.html">Contato</a>
+                                <a href="/pages/public/contato.html">Contato</a>
                             </li>
-                            <li><a href="pages/public/login.html">Login</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
 
+
         <div class="hero-image">
             <div class="hero-text">
-                <h1>
+                <h1 id="slogan">
                     Lugar de paz e tranquilidade<br /><b
                         >em meio à natureza exuberante</b
                     ><br />
@@ -83,7 +102,9 @@
                             </p>
                             <div>
                                 <button class="botaoEscuroMenor">
-                                    <a href="pages/public/acomodacoes.html">Escolha o seu!</a>
+                                    <a href="pages/public/acomodacoes.html"
+                                        >Escolha o seu!</a
+                                    >
                                 </button>
                             </div>
                         </div>
@@ -115,7 +136,9 @@
                     </p>
 
                     <button class="botaoEscuroMaior">
-                     <a href="pages/public/acomodacoes.html">Conheça mais sobre os nossos serviços!</a>
+                        <a href="pages/public/acomodacoes.html"
+                            >Conheça mais sobre os nossos serviços!</a
+                        >
                     </button>
                 </div>
             </section>

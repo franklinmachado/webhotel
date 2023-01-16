@@ -23,7 +23,7 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* Contact Form Styles */
+
 h1 {
     text-align: center;
     margin: 10px 0 0 0;
@@ -124,15 +124,13 @@ input[type="number"] {
     color: #e5e6e7;
 }
 
-/* Hide success/failure message
-   (especially since the php is missing) */
+
 .failure,
 .success {
     color: #6ea070;
     display: none;
 }
 
-/* Make form look nice on smaller screens */
 
 @media (max-width: 1194px) {
     .contact-form {
