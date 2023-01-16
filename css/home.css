@@ -9,7 +9,6 @@
     color: #364420;
     padding-left: 2rem;
     margin: 2rem;
-    text-align: center;
 }
 
 .h2__title__sobre {
@@ -71,6 +70,7 @@
 .gastronomia_container {
     display: flex;
     align-items: center;
+    padding: 0 5rem;
 }
 
 .gastronomia_image img {
@@ -81,10 +81,11 @@
 }
 
 .gastronomia_text {
-    width: 60ch;
-    padding: 2rem 4em;
+    width: 80%;
+    padding: 2rem 0;
     font-size: 1.2rem;
     line-height: 2rem;
+    margin: auto;
 }
 
 .gastronomia_h2 {
@@ -163,8 +164,8 @@ html {
 /* imagem do banner */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/bannerHome.jpg");
-    height: 50em;
+        url('../images/bannerHome.jpg');
+    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,11 +181,14 @@ html {
     color: white;
 }
 
-.hero-text h1 {
-    font-size: 3em;
+#slogan {
+    padding: 2rem 0;
+    font-size: 2.5rem;
     color: var(--cor-letra-clara);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.8;
+    max-width: 60vw;
+    margin: auto;
 }
 
 .cropped1 {
@@ -292,6 +296,10 @@ html {
         position: none;
     }
 
+    #slogan {
+        font-size: 1.5rem;
+    }
+
     .hero-text h1 {
         color: black;
         font-size: 1.5rem;
@@ -335,8 +343,6 @@ html {
     }
 
     .sobre__flex {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 
     .sobre__flex img {
@@ -355,20 +361,21 @@ html {
     }
 
     .gastronomia_text {
-        width: 28ch;
+        margin: auto;
+
         padding-top: 1.5rem;
     }
 
     .gastronomia_text p {
         font-size: 1.4rem;
-        width: 26ch;
+        width: 80%;
         text-align: center;
         margin: 2rem auto;
         margin-right: 0;
     }
 
     .gastronomia_h2 {
-        width: 18ch;
+        width: 80%;
         text-align: center;
     }
 

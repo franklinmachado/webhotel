@@ -11,22 +11,46 @@
     </head>
     <body>
         <header>
-            <img
-                class="header__logo"
-                src="../../images/logoColorida.svg"
-                alt=""
-            />
+            <div class="logo-container">
+                <div></div>
+                <img
+                    class="header__logo"
+                    src="../../images/logoColorida.svg"
+                    alt=""
+                />
+                <div class="login">
+                    <span id="mensagem">
+                        Fazer
+                        <a href="/pages/public/login.html">login</a>
+                    </span>
+                    <span id="logado">
+                        <span id="nome"></span>
+                            <a id="sair"></a>
+                </div>
+            </div>
             <div class="header__container">
                 <div class="header__wrapper">
                     <nav>
                         <ul class="main-navigation">
+                            <li><a href="../../index.html">Home</a></li>
                             <li>
-                                <a href="../../index.html">Página principal</a>
+                                <a href="/pages/public/sobre.html"
+                                    >Nosso hotel</a
+                                >
                             </li>
-                            <li><a href="sobre.html">Nosso hotel</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li>
+                                <a href="/pages/public/acomodacoes.html"
+                                    >Acomodações</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/pages/public/reservas.html"
+                                    >Reservas</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/pages/public/contato.html">Contato</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -82,7 +106,7 @@
                 </div>
             </section>
 
-            <article>
+            <article class="article_reserva">
                 <div class="reserva_opcoes_container">
                     <div class="container_geral ofuro">
                         <div>
@@ -209,7 +233,7 @@
                     />
                     <nav>
                         <ul class="footer__navigation">
-                            <li><a href="../../index.html">Página principal</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="acomodacoes.html">Acomodações</a></li>
                             <li><a href="reservas.html">Reservas</a></li>

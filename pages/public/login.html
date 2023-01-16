@@ -4,53 +4,71 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../css/style.css" />
-        <link rel="stylesheet" href="../../docs/header/header.css" />
-        <link rel="stylesheet" href="../../docs/footer/footer.css" />
-        <title>Montseny - Login</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/footer.css" />
+        <script src="/js/formulário.js" async></script>
     </head>
 
     <body>
-        <header>
-            <img
-                class="header__logo"
-                src="../../images/logoColorida.svg"
-                alt=""
-            />
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="../../index.html">Página principal</a></li>
-                            <li><a href="sobre.html">Nosso hotel</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
+       <header>
+        <div class="logo-container">
+            <div></div>
+            <img class="header__logo" src="../../images/logoColorida.svg" alt="Logo do Montseny" />
+
+            <div class="login">
+                <span id="mensagem">
+                    <p>Fazer <a href="/pages/public/login.html">login</a>
+                    </p>
+                </span>
+                <span id="logado">
+                    <span id="nome"></span>
+                    <a id="sair"></a>
             </div>
-        </header>
+        </div>
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav>
+                    <ul class="main-navigation">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li>
+                            <a href="/pages/public/sobre.html">Nosso hotel</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/acomodacoes.html">Acomodações</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/reservas.html">Reservas</a>
+                        </li>
+                        <li>
+                            <a href="/pages/public/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
         <div class="flex-container">
             <div class="formulario-container">
-                <main>
-                <form action="../../index.html" method="post" class="formulario">
+                <form class="formulario" id="formulario">
                     <h2>Login</h2>
 
                     <div class="input-container">
-                        <label class="labelEmail" for="email">E-mail</label>
+                        <label class="email" for="email">E-mail</label>
                         <input type="email" name="email" id="email" />
-                    </div>
 
-                    <div class="input-container">
-                        <label class="labelsenha" for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" />
+                        <div class="input-container">
+                            <label class="password" for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" />
+                        </div>
                     </div>
 
                     <div class="botoes">
                         <a href="index.html"
-                            ><button class="botaoEscuroMenor">Entrar</button></a
+                            ><button class="botaoEscuroMenor" id="botaoForm">
+                                Entrar
+                            </button></a
                         >
                         <a href="index.html" class="links"
                             >Esqueci minha senha</a
