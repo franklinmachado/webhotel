@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../css/style.css" />
-        <link rel="stylesheet" href="../../css/cadastro.css" />
-        <link rel="stylesheet" href="../../docs/header/header.css" />
-        <link rel="stylesheet" href="../../docs/footer/footer.css" />
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/footer.css"/>
+        <link rel="stylesheet" href="/docs/header/header.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
             rel="stylesheet"
@@ -16,56 +16,40 @@
     </head>
 
     <body>
-        <header>
-            <div class="logo-container">
-                <div></div>
-                <img
-                    class="header__logo"
-                    src="../../images/logoColorida.svg"
-                    alt=""
-                />
-                <div class="login">
-                    <span id="mensagem">
-                        Fazer
-                        <a href="/pages/public/login.html">login</a>
-                    </span>
-                    <span id="logado">
-                        <span id="nome"></span>
-                            <a id="sair"></a>
-                </div>
-            </div>
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="../../index.html">Home</a></li>
-                            <li>
-                                <a href="/pages/public/sobre.html"
-                                    >Nosso hotel</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/acomodacoes.html"
-                                    >Acomodações</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/reservas.html"
-                                    >Reservas</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/pages/public/contato.html">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+       <header>
+    <div class="logo-container">
+        <div></div>
+        <img class="header__logo" src="../../images/logoColorida.svg" alt="" />
+        <div class="login">
+            <span class="mensagem">Fazer<a classe="nome" href="/pages/public/login.html"> login</a></span>
+        </div>
+    </div>
+    <div class="header__container">
+        <div class="header__wrapper">
+            <nav>
+                <ul class="main-navigation">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a href="/pages/public/sobre.html">Nosso hotel</a>
+                    </li>
+                    <li>
+                        <a href="/pages/public/acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li>
+                        <a href="/pages/public/reservas.html">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="/pages/public/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
         <main>
         <div class="formulario-container">
             <form action="../../index.html" method="post" class="formulario-cadastro">
-                <h2 class="mensagem">Bem vindo a tela de cadastro</h2>
+                <h2 class="mensagemCadastro">Bem vindo a tela de cadastro</h2>
                 <div class="input-container">
     
                     <input
@@ -133,10 +117,9 @@
                     <button class="botaoEscuroMenor">Finalizar</button>
                 </div>
             </form>
-            <!--<img src="../../images/login.webp" class="imagem" alt="" />-->
         </div>
         </main>
-        <footer>
+    <footer>
             <div class="footer__container">
                 <div class="footer__wrapper">
                     <img
@@ -144,19 +127,23 @@
                         src="../../images/logoBranca.svg"
                         alt=""
                     />
-
                     <nav>
                         <ul class="footer__navigation">
-                            <li><a href="../../index.html">Home</a></li>
+                            <li>
+                                <a href="../../index.html">Página principal</a>
+                            </li>
                             <li><a href="contato.html">Contato</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="reservas.html">Reservas</a></li>
                             <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="../admin/formularioAdmin.html">Administração</a></li>
+                            <li>
+                                <a href="../admin/formularioAdmin.html"
+                                    >Administração</a
+                                >
+                            </li>
                         </ul>
                     </nav>
                     <nav>
-                        <ul class="footer__social">
+                        <ul role="list" class="footer__social">
                             <li>
                                 <a href="#" data-social="facebook"
                                     ><span class="sr-only">Facebook</span></a
