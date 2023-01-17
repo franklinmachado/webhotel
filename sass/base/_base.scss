@@ -1,0 +1,8 @@
+@use "../sass-utils/variaveis" as v;
+
+body {
+    background-color: v.$background-primario-claro;
+    color: v.$cor-letra-escura;
+    font-family: "Montserrat", sans-serif;
+    font-size: v.$text-base;
+}
