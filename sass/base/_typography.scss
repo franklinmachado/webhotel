@@ -1,0 +1,18 @@
+@use "../sass-utils/variaveis" as v;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: v.$cor-destaque;
+}
+
+h1 {
+    font-size: v.$text-3xl;
+}
+
+h2 {
+    font-size: v.$text-2xl;
+}

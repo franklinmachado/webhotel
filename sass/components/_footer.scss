@@ -1,0 +1,82 @@
+@use "../sass-utils/variaveis" as v;
+
+.footer__container {
+    background-color: v.$background-escuro;
+
+    .footer__wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: v.$spacing-base;
+        width: 90%;
+        max-width: 1280px;
+        margin-inline: auto;
+        padding-block: v.$spacing-base;
+
+        @media (max-width: 1024px) and (orientation: portrait) {
+            flex-direction: column;
+        }
+
+        .footer__logo {
+            height: calc(64px + 5vh);
+
+            @media (max-width: 414px) and (orientation: portrait) {
+                display: none;
+            }
+        }
+
+        .footer__navigation {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: v.$spacing-base;
+            list-style: none;
+
+            @media (max-width: 1194px) and (orientation: landscape) {
+                flex-direction: row;
+            }
+
+            li a {
+                color: v.$cor-letra-clara;
+            }
+        }
+    }
+
+    .footer__social {
+        justify-content: center;
+        display: flex;
+        gap: v.$spacing-base;
+        list-style: none;
+    
+        li a {
+            aspect-ratio: 1;
+            display: inline-block;
+            width: 32px;
+            background-size: cover;
+
+            &[data-social="facebook"] {
+                background-image: url("../../images/facebook.svg");
+            }
+            
+            &[data-social="instagram"] {
+                background-image: url("../../images/instagram.svg");
+            }
+            
+            &[data-social="whatsapp"] {
+                background-image: url("../../images/whatsapp.svg");
+            }
+            
+            &[data-social="email"] {
+                background-image: url("../../images/o-email.svg");
+            }
+        }
+    }
+
+    .copyright {
+        background-color: v.$background-primario-claro;
+        display: block;
+        font-size: v.$text-md;
+        padding-block: v.$spacing-sm;
+        text-align: center;
+    }
+}
