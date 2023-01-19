@@ -1,0 +1,86 @@
+@use "../sass-utils/variaveis" as v;
+@use "../sass-utils/functions" as f;
+@use "../sass-utils/mixins" as m;
+
+.reservas__container {
+    @include m.container;
+}
+
+.reservas__table {
+    border-collapse: collapse;
+    color: v.$cor-letra-escura;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+    th, td {
+        text-align: center;
+    }
+
+    th {
+        padding-block: f.pxToRem(8);
+    }
+
+    tbody {
+        tr {
+            td {
+                padding-block: f.pxToRem(8);
+            }
+            &:nth-of-type(odd) {
+                background: v.$cor-apoio-claro;
+            }
+        }
+    }
+
+    @media (max-width: 915px) {
+        width: 100%;
+        margin-block: v.$spacing-base;
+        border: 0;
+
+        &,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tbody {
+            display: grid;
+            gap: f.pxToRem(16);
+
+            tr {
+                padding-inline: v.$spacing-base;
+                border-radius: 6px;
+                @include m.shadow;
+            }
+        }
+
+        td {
+            padding-inline: v.$spacing-base;
+            padding-block: v.$spacing-sm;
+            display: flex;
+            justify-content: space-between;
+            font-size: v.$text-sm;
+
+            & + td {
+                border-top: 1px solid v.$cor-secundaria;
+            }
+
+            &::before {
+                content: attr(data-label);
+                float: left;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+        }
+    }
+}
