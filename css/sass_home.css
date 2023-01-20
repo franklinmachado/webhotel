@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/* 10px - 12px */
+/* 12px - 14px */
+/* 14px - 16px */
+/* 16px - 18px */
+/* 20px - 24px */
+/* 28px - 32px */
+/* 32px- 40px*/
+/* 40px - 48px */
+.h2__title {
+  font-size: 2.5em;
+  color: #364420;
+  margin: 2rem;
+  text-align: center;
+}
+
+.h2__title__sobre {
+  text-align: center;
+  color: #fffef5;
+  background-color: #283618;
+}
+
+.chale__section {
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.chale__container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 3%;
+  line-height: 1.8;
+}
+
+.chale__text h2 {
+  max-width: 20em;
+  line-height: 1.4;
+  font-size: 1.9em;
+  color: #c4972e;
+}
+
+.chale__image img {
+  max-width: 35em;
+  border-radius: 40px;
+  padding: 1em;
+}
+
+.chale__text p {
+  max-width: 30em;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 0;
+}
+
+.sobre__flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.sobre__flex div {
+  width: 29vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobre__flex img {
+  width: 96%;
+  border-radius: 0.6rem;
+}
+
+.sobre__text {
+  padding: 1em;
+  text-align: center;
+  width: 60vw;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: auto;
+}
+
+.gastronomia_container {
+  display: flex;
+  align-items: center;
+}
+
+.gastronomia_image img {
+  width: 280px;
+  padding: 1rem;
+  border-radius: 4em;
+  margin-bottom: 2em;
+}
+
+.gastronomia_text {
+  width: 60%;
+  padding: 2rem 4em;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.gastronomia_h2 {
+  max-width: 15em;
+  line-height: 1.2;
+  font-size: 1.8em;
+  color: #c4972e;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* Botões */
+.botaoClaro {
+  font-size: larger;
+  font-weight: 700;
+  border: none;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 25px;
+  background-color: rgba(249, 177, 21, 0.6980392157);
+  color: #283618;
+}
+
+.botaoClaro:hover {
+  background-color: #283618;
+  color: #fffef5;
+}
+
+.botaoEscuroMenor {
+  border: 0;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.8em;
+  border-radius: 0.6rem;
+  background-color: #283618;
+  color: #fffef5;
+}
+
+.chale__text > div {
+  margin: 1.5rem 0;
+}
+
+.botaoEscuroMenor a {
+  color: #fffef5;
+  text-decoration: none;
+}
+
+.botaoEscuroMenor:hover {
+  background-color: #c4972e;
+  color: #fffef5;
+}
+
+.botaoEscuroMaior {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border: 0;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 1em;
+  border-radius: 0.6rem;
+  background-color: #283618;
+}
+
+.botaoEscuroMaior a {
+  text-decoration: none;
+  color: #fffef5;
+}
+
+.botaoEscuroMaior:hover {
+  background-color: #c4972e;
+  color: #fffef5;
+}
+
+/* imagem do banner */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bannerHome.jpg");
+  height: 50em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: #fffef5;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.cropped1 {
+  max-width: 35em;
+  min-width: 30em;
+  height: 28em;
+  object-fit: cover;
+}
+
+/*Tablet*/
+@media (max-width: 1194px) {
+  .chale__container {
+    grid-template-columns: 1fr 2fr;
+  }
+  .main-home {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .cropped1 {
+    min-width: 20em;
+    height: 20em;
+  }
+  .chale__text {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .chale__image {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .h2__title {
+    font-size: 1.8rem;
+  }
+  .gastronomia_container {
+    box-sizing: none;
+  }
+  .gastronomia_container img {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 4rem;
+  }
+  .gastronomia_image {
+    box-sizing: initial;
+  }
+  .cropped2 {
+    max-width: 90%;
+    min-width: 90%;
+    height: 90%;
+    border-radius: none;
+  }
+}
+@media (max-width: 1024px) {
+  .cropped1 {
+    min-width: 18em;
+    height: 18em;
+  }
+  .gastronomia_text {
+    padding: 3rem;
+  }
+}
+/*mobile*/
+@media (max-width: 760px) {
+  .chale__section {
+    width: 100%;
+  }
+}
+@media (max-width: 715px) {
+  .chale__container {
+    grid-template-columns: 1fr;
+  }
+  .chale__container .chale__image img {
+    display: block;
+    margin: 0 auto;
+  }
+  .chale__text {
+    width: 80vw;
+  }
+  .h2__title {
+    margin: 0 0 1rem 0;
+  }
+  .chale__text > div {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 670px) {
+  .chale__image img {
+    display: block;
+    margin: 0 auto;
+  }
+  .chale__text div {
+    display: flex;
+    justify-content: center;
+  }
+  .chale__text {
+    width: 80vw;
+  }
+  .chale__text h2,
+  .chale__text p {
+    text-align: center;
+  }
+  .chale__text h2,
+  .sobre__container h2,
+  .gastronomia_h2 {
+    font-size: 1.6rem;
+  }
+  .sobre__flex {
+    grid-template-columns: 1fr;
+  }
+  .sobre__flex img {
+    width: 90vw;
+    margin-top: 1rem;
+    border-radius: 0.6rem;
+  }
+  .sobre__text {
+    width: 80vw;
+  }
+  .gastronomia_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gastronomia_image {
+    display: flex;
+    justify-content: center;
+  }
+  .gastronomia_container img {
+    padding: 1rem;
+  }
+  .gastronomia_text {
+    padding-top: 0;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .gastronomia_text p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .gastronomia_h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .title1 {
+    display: none;
+  }
+  .cropped2 {
+    max-width: 90%;
+    min-width: 90%;
+    height: 90%;
+    border-radius: none;
+  }
+}
+@media (max-width: 414px) {
+  /*hero*/
+  .chale__text h2 {
+    font-size: 1.6rem;
+  }
+  .hero-image {
+    background: none;
+    height: auto;
+  }
+  .hero-text {
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 10vw;
+  }
+  .hero-text h1 {
+    color: white;
+    font-size: 2rem;
+  }
+  /*chale*/
+  .chale__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .chale__text {
+    margin: 0 auto;
+  }
+  .chale__text h2 {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  .chale__text p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  div.chale__container > .chale__image img {
+    margin-top: 4vh;
+  }
+  /*sobre*/
+  .sobre__text {
+    max-width: 90vw;
+  }
+  .sobre__text p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem auto;
+    margin-top: 0;
+  }
+  .sobre__flex {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sobre__flex img {
+    width: 90vw;
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  /*botoes*/
+  .botaoClaro {
+    margin: 2rem auto;
+  }
+  .botaoEscuroMenor a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  div .botaoEscuroMenor {
+    display: block;
+    white-space: nowrap;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    padding: 1em;
+    border-radius: 25px;
+  }
+  .sobre__text .botaoEscuroMaior {
+    min-width: auto;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    padding: 1em;
+    border-radius: 25px;
+  }
+  .cropped1 {
+    max-width: 18em;
+    min-width: 18em;
+    height: 16em;
+  }
+  .cropped2 {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    border-radius: none;
+  }
+}
+
+/*# sourceMappingURL=sass_home.css.map */
