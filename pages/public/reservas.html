@@ -9,12 +9,14 @@
         <title>Faça sua reserva</title>
     </head>
     <body>
-        <header>
-            <img
-                class="header__logo"
-                src="../../images/logoColorida.svg"
-                alt=""
-            />
+        <header class="main__header">
+            <div class="header__logo__container">
+                <img
+                    class="header__logo__img"
+                    src="../../images/logoColorida.svg"
+                    alt=""
+                />
+            </div>
             <div class="header__container">
                 <div class="header__wrapper">
                     <nav>
@@ -22,7 +24,7 @@
                             <li>
                                 <a href="../../index.html">Página principal</a>
                             </li>
-                            <li><a href="sobre.html">Nosso hotel</a></li>
+                            <li><a href="sobre.html">Reservas</a></li>
                             <li><a href="acomodacoes.html">Acomodações</a></li>
                             <li><a href="contato.html">Contato</a></li>
                             <li><a href="login.html">Login</a></li>
@@ -179,16 +181,16 @@
                     <h3>Resumo da reserva</h3>
                     <div class="previewer_conteudo">
                         <p>
-                            <b>Apartamento:<br /> </b><span>xxxx</span>
+                            <b>Apartamento:<br /> </b><span id="quarto">xxxx</span>
                         </p>
                         <p>
-                            <b>Check-in:<br /> </b><span>11/22/3333</span>
+                            <b>Check-in:<br /> </b><span id="checkIn">11/22/3333</span>
                         </p>
                         <p>
-                            <b>Check-out:<br /> </b><span>11/22/3333</span>
+                            <b>Check-out:<br /> </b><span id="checkOut">11/22/3333</span>
                         </p>
                         <p>
-                            <b>Pessoas:<br /> </b><span>x</span>
+                            <b>Pessoas:<br /> </b><span id="qtdPessoas">x</span>
                         </p>
                     </div>
                     <div class="servicos">
