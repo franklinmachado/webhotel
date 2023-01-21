@@ -28,23 +28,23 @@ let reserva = {
 
 document.addEventListener("DOMContentLoaded", () => {
     const reservaLocalStorage = localStorage.getItem("reserva")
-    if (reserva) {
+    if (reservaLocalStorage) {
         reserva = JSON.parse(reservaLocalStorage)
         updateView(reserva)
-        // alert("existe reserva em localStorage")
     }
 })
 
 checkIn.addEventListener("input", () => {
-    reserva.checkIn = checkIn.valueAsDate
-    sendReservaToLocalStorage(reserva)
+    reserva.checkIn = checkIn.value
     updateView(reserva)
+    sendReservaToLocalStorage(reserva)
 })
 
 checkOut.addEventListener("input", () => {
-    reserva.checkOut = checkOut.valueAsDate
-    sendReservaToLocalStorage(reserva)
+    reserva.checkOut = checkOut.value
+    reserva.totalDeDias = totalDeDias(reserva.checkIn, reserva.checkOut)
     updateView(reserva)
+    sendReservaToLocalStorage(reserva)
 })
 
 quantidadeDePessoas.addEventListener("input", () => {
@@ -63,7 +63,7 @@ chales.forEach((chale) => {
 })
 
 function sendReservaToLocalStorage(reserva) {
-     localStorage.setItem("reserva", JSON.stringify(reserva))
+    localStorage.setItem("reserva", JSON.stringify(reserva))
 }
 
 function updateView(reserva) {
@@ -86,11 +86,8 @@ function updateModal(reserva) {
     modalQtdPessoas.textContent = reserva.quantidadeDePessoas
 }
 
-function totalDeDias(dataCheckIn, dataCheckOut) {
-    const checkIn = new Date(dataCheckIn)
-    const checkOut = new Date(dataCheckOut)
-
-    const diferencaEmMs = checkOut - checkIn;
+function totalDeDias(checkIn, checkOut) {
+    const diferencaEmMs = new Date(checkOut) - new Date(checkIn);
     const diferencaEmDias = diferencaEmMs / (1000 * 60 * 60 * 24);
     return diferencaEmDias;
 }
