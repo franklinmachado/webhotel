@@ -204,6 +204,15 @@ input[type="radio"] {
 .previewer button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+.h4modal1 {
+    cursor: pointer;
+}
+
+.h4modal1:hover {
+    color: #c4972e;
+}
+
 /*media queries*/
 
 @media (max-width: 1515px) {
