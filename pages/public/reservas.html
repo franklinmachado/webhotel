@@ -1,261 +1,260 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../css/main.css">
-        <link rel="stylesheet" href="../../css/reservas.css" />
-        <title>Faça sua reserva</title>
-    </head>
-    <body>
-        <header class="main__header">
-            <div class="header__logo__container">
-                <img
-                    class="header__logo__img"
-                    src="../../images/logoColorida.svg"
-                    alt=""
-                />
-            </div>
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li>
-                                <a href="../../index.html">Página principal</a>
-                            </li>
-                            <li><a href="sobre.html">Reservas</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+<html lang="pt-br">
 
-        <main class="main_reserva">
-            <section class="reserva_check_in">
-                <div class="reserva_check_in_h1">
-                    <h1>Minha reserva</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/reservas.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        async></script>
+    <title>Faça sua reserva</title>
+</head>
+
+<body>
+    <header class="main__header">
+        <div class="header__logo__container">
+            <img class="header__logo__img" src="../../images/logoColorida.svg" alt="" />
+        </div>
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav>
+                    <ul class="main-navigation">
+                        <li>
+                            <a href="../../index.html">Página principal</a>
+                        </li>
+                        <li><a href="sobre.html">Reservas</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_reserva">
+        <section class="reserva_check_in">
+            <div class="reserva_check_in_h1">
+                <h1>Minha reserva</h1>
+            </div>
+            <div class="reserva_check_in_p">
+                <p>
+                    Forneça a data de entrada, saida e quantidade de
+                    pessoas.
+                </p>
+            </div>
+            <div class="reserva_check_in_container">
+                <div class="reserva_conteudo">
+                    <label for="check_in">Check-In</label>
+                    <input type="date" name="check_in" id="check_in" required />
                 </div>
-                <div class="reserva_check_in_p">
+                <div class="reserva_conteudo">
+                    <label for="check_out">Check-Out</label>
+                    <input type="date" name="check_out" id="check_out" required />
+                </div>
+                <div class="q1 reserva_conteudo">
+                    <label for="quantidade_pessoas">Número de pessoas</label>
+                    <input type="number" name="quantidade_pessoas" id="quantidade_pessoas" max="4" required />
+                </div>
+            </div>
+            <hr />
+            <div class="reserva_quarto">
+                <p>Escolha abaixo o seu chalé</p>
+            </div>
+        </section>
+
+        <article>
+            <div class="reserva_opcoes_container">
+                <div class="container_geral ofuro">
+                    <div>
+                        <img src="../../images/chaleofuro.webp" alt="chalé com ofurô" />
+                    </div>
+                    <div>
+                        <h2>Ofurô</h2>
+                        <p>
+                            Delicie-se com um banho aromático de ofurô com
+                            privacidade e aconchego, escolha uma de nossas
+                            cabanas! Feitas de madeira, com varanda e vista
+                            para o bosque, são equipadas com tudo o que você
+                            precisa para relaxar em grande estilo.
+                        </p>
+                        <span>R$ 999.99</span>
+                        <div class="reserva_radio">
+                            <label class="reserva_label" for="ofuro">Selecionar o Chalé Ofurô</label>
+                            <input type="radio" name="chale" id="ofuro" value="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container_geral master">
+                    <div>
+                        <img src="../../images/master.webp" alt="chalé Master" />
+                    </div>
+                    <div>
+                        <h2>Master</h2>
+                        <p>
+                            O Chalé Master, com aproximadamente 50m² de
+                            requinte e aconchego, oferece quarto e hall de
+                            entrada totalmente integrados e separados da
+                            área externa. Possui uma vista única que
+                            proporcionará uma experiência inesquecível, um
+                            banheiro e lareira para os dias de frio.
+                        </p>
+                        <span>R$ 888,88</span>
+                        <div class="reserva_radio">
+                            <label class="reserva_label" for="master">Selecionar o Chalé Master</label>
+                            <input type="radio" name="chale" id="master" value="2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container_geral luxo_familia">
+                    <div>
+                        <img src="../../images/familia.webp" alt="chalé luxo fámilia" />
+                    </div>
+                    <div>
+                        <h2>Luxo Fámilia</h2>
+                        <p>
+                            O Chalé Luxo Família é ideal para famílias de
+                            até 4 pessoas. Possui uma encantadora vista do
+                            vale e do lago e uma aconchegante lareira para
+                            os dias de frio. Conta com uma linda área
+                            externa e varanda privativa.
+                        </p>
+                        <span>R$ 777,77</span>
+                        <div class="reserva_radio">
+                            <label class="reserva_label" for="luxo_familia">Selecionar o Chalé Família</label>
+                            <input type="radio" name="chale" id="luxo_familia" value="3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="previewer">
+                <h3>Resumo da reserva</h3>
+                <div class="previewer_conteudo">
                     <p>
-                        Forneça a data de entrada, saida e quantidade de
-                        pessoas.
+                        <b>Apartamento:<br /> </b><span id="quarto">xxxx</span>
+                    </p>
+                    <p>
+                        <b>Check-in:<br /> </b><span id="checkIn">11/22/3333</span>
+                    </p>
+                    <p>
+                        <b>Check-out:<br /> </b><span id="checkOut">11/22/3333</span>
+                    </p>
+                    <p>
+                        <b>Pessoas:<br /> </b><span id="qtdPessoas">x</span>
                     </p>
                 </div>
-                <div class="reserva_check_in_container">
-                    <div class="reserva_conteudo">
-                        <label for="check_in">Check-In</label>
-                        <input
-                            type="date"
-                            name="check_in"
-                            id="check_in"
-                            required
-                        />
-                    </div>
-                    <div class="reserva_conteudo">
-                        <label for="check_out">Check-Out</label>
-                        <input
-                            type="date"
-                            name="check_out"
-                            id="check_out"
-                            required
-                        />
-                    </div>
-                    <div class="q1 reserva_conteudo">
-                        <label for="quantidade_pessoas"
-                            >Número de pessoas</label
-                        >
-                        <input
-                            type="number"
-                            name="quantidade_pessoas"
-                            id="quantidade_pessoas"
-                            max="4"
-                            required
-                        />
-                    </div>
+                <div class="servicos">
+                    <h4 data-bs-toggle="modal" data-bs-target="#exampleModal" class="h4modal1">Adicionar mais SERVIÇOS</h4>
                 </div>
-                <hr />
-                <div class="reserva_quarto">
-                    <p>Escolha abaixo o seu chalé</p>
+                <div class="previewer_botao">
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Continuar</button>
                 </div>
-            </section>
-
-            <article>
-                <div class="reserva_opcoes_container">
-                    <div class="container_geral ofuro">
-                        <div>
-                            <img
-                                src="../../images/chaleofuro.webp"
-                                alt="chalé com ofurô"
-                            />
-                        </div>
-                        <div>
-                            <h2>Ofurô</h2>
-                            <p>
-                                Delicie-se com um banho aromático de ofurô com
-                                privacidade e aconchego, escolha uma de nossas
-                                cabanas! Feitas de madeira, com varanda e vista
-                                para o bosque, são equipadas com tudo o que você
-                                precisa para relaxar em grande estilo.
-                            </p>
-                            <span>R$ 999.99</span>
-                            <div class="reserva_radio">
-                                <label class="reserva_label" for="ofuro"
-                                    >Selecionar o Chalé Ofurô</label
-                                >
-                                <input
-                                    type="radio"
-                                    name="chale"
-                                    id="ofuro"
-                                    value="1"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container_geral master">
-                        <div>
-                            <img
-                                src="../../images/master.webp"
-                                alt="chalé Master"
-                            />
-                        </div>
-                        <div>
-                            <h2>Master</h2>
-                            <p>
-                                O Chalé Master, com aproximadamente 50m² de
-                                requinte e aconchego, oferece quarto e hall de
-                                entrada totalmente integrados e separados da
-                                área externa. Possui uma vista única que
-                                proporcionará uma experiência inesquecível, um
-                                banheiro e lareira para os dias de frio.
-                            </p>
-                            <span>R$ 888,88</span>
-                            <div class="reserva_radio">
-                                <label class="reserva_label" for="master"
-                                    >Selecionar o Chalé Master</label
-                                >
-                                <input
-                                    type="radio"
-                                    name="chale"
-                                    id="master"
-                                    value="2"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container_geral luxo_familia">
-                        <div>
-                            <img
-                                src="../../images/familia.webp"
-                                alt="chalé luxo fámilia"
-                            />
-                        </div>
-                        <div>
-                            <h2>Luxo Fámilia</h2>
-                            <p>
-                                O Chalé Luxo Família é ideal para famílias de
-                                até 4 pessoas. Possui uma encantadora vista do
-                                vale e do lago e uma aconchegante lareira para
-                                os dias de frio. Conta com uma linda área
-                                externa e varanda privativa.
-                            </p>
-                            <span>R$ 777,77</span>
-                            <div class="reserva_radio">
-                                <label class="reserva_label" for="luxo_familia"
-                                    >Selecionar o Chalé Família</label
-                                >
-                                <input
-                                    type="radio"
-                                    name="chale"
-                                    id="luxo_familia"
-                                    value="3"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="previewer">
-                    <h3>Resumo da reserva</h3>
-                    <div class="previewer_conteudo">
-                        <p>
-                            <b>Apartamento:<br /> </b><span id="quarto">xxxx</span>
-                        </p>
-                        <p>
-                            <b>Check-in:<br /> </b><span id="checkIn">11/22/3333</span>
-                        </p>
-                        <p>
-                            <b>Check-out:<br /> </b><span id="checkOut">11/22/3333</span>
-                        </p>
-                        <p>
-                            <b>Pessoas:<br /> </b><span id="qtdPessoas">x</span>
-                        </p>
-                    </div>
-                    <div class="servicos">
-                        <h4>Adicionar mais SERVIÇOS</h4>
-                    </div>
-                    <div class="previewer_botao">
-                        <button type="submit">Continuar</button>
-                    </div>
-                </div>
-            </article>
-        </main>
-
-        <footer>
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <img
-                        class="footer__logo"
-                        src="../../images/logoBranca.svg"
-                        alt=""
-                    />
-                    <nav>
-                        <ul class="footer__navigation">
-                            <li><a href="../../index.html">Página principal</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li>
-                                <a href="admin/formularioAdmin.html"
-                                    >Administração</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="footer__social">
-                            <li>
-                                <a href="#" data-social="facebook"
-                                    ><span class="sr-only">Facebook</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="instagram"
-                                    ><span class="sr-only">Instagram</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="whatsapp"
-                                    ><span class="sr-only">Whatsapp</span></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-social="email"
-                                    ><span class="sr-only">Email</span></a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <span class="copyright"
-                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
-                >
             </div>
-        </footer>
+        </article>
 
-        <script src="../../js/reserva.js" defer></script>
-    </body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Serviços Adicionais</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Cofre no quarto</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Espaço para o seu Pet</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Almoço incluso na
+                                estadia</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Serviços de Massagem</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Banheiro full resource</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Inserir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Reserva realizada com sucesso !</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ( importar as informações da reserva ) <br>
+                        a) abrir uma modal com as informações da reserva, incluindo o título, foto e descrição da acomodação <br>
+                        b) incluir também o descritivos sobre a quantidade de pessoas, data de check-in, checkout, serviços adicionais <br>
+                        c) descrever valores individuais de cada item e a soma total da reserva <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="../../images/logoBranca.svg" alt="" />
+                <nav>
+                    <ul class="footer__navigation">
+                        <li><a href="../../index.html">Página principal</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li>
+                            <a href="admin/formularioAdmin.html">Administração</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#" data-social="facebook"><span class="sr-only">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="instagram"><span class="sr-only">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="whatsapp"><span class="sr-only">Whatsapp</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="email"><span class="sr-only">Email</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="copyright">&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </div>
+    </footer>
+
+    <script src="../../js/reserva.js" defer></script>
+</body>
+
 </html>

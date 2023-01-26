@@ -6,5 +6,8 @@
     "[html5]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5501,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
