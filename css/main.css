@@ -400,16 +400,16 @@ body {
   background-size: cover;
 }
 .footer__container .footer__social li a[data-social=facebook] {
-  background-image: url("../../images/facebook.svg");
+  background-image: url("../images/facebook.svg");
 }
 .footer__container .footer__social li a[data-social=instagram] {
-  background-image: url("../../images/instagram.svg");
+  background-image: url("../images/instagram.svg");
 }
 .footer__container .footer__social li a[data-social=whatsapp] {
-  background-image: url("../../images/whatsapp.svg");
+  background-image: url("../images/whatsapp.svg");
 }
 .footer__container .footer__social li a[data-social=email] {
-  background-image: url("../../images/o-email.svg");
+  background-image: url("../images/o-email.svg");
 }
 .footer__container .copyright {
   background-color: #fffef5;
