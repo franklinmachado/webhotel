@@ -24,7 +24,7 @@
     border-radius: 1em;
 }
 
-.mensagem{
+.mensagemCadastro{
     font-family: "Satisfy", cursive;
     font-size: 3.2rem;
     font-weight: 200;
@@ -45,13 +45,13 @@
 }
 
 
-.formulario-cadastro button{
+.botaoEscuroMenor{
     background-color: #c4972e;
     text-decoration: none;
     width: 50%;
 }
 
-.formulario-cadastro button:hover{
+.botaoEscuroMenor:hover{
     color: #283618;
     font-weight: 700;
     transition:1s;
