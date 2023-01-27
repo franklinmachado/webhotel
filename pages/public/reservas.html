@@ -147,9 +147,13 @@
                     <p>
                         <b>Pessoas:<br /> </b><span id="qtdPessoas">x</span>
                     </p>
+                    <p>
+                        <b>Total:<br /> </b><span id="total">x</span>
+                    </p>
                 </div>
                 <div class="servicos">
-                    <h4 data-bs-toggle="modal" data-bs-target="#exampleModal" class="h4modal1">Adicionar mais SERVIÇOS</h4>
+                    <h4 data-bs-toggle="modal" data-bs-target="#exampleModal" class="h4modal1">Adicionar mais SERVIÇOS
+                    </h4>
                 </div>
                 <div class="previewer_botao">
                     <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Continuar</button>
@@ -166,30 +170,36 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Cofre no quarto</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="cofre" name="servicos"
+                                value="1">
+                            <label class="form-check-label" for="cofre">Cofre no quarto</label>
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Espaço para o seu Pet</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="pet" name="servicos"
+                                value="2">
+                            <label class="form-check-label" for="pet">Espaço para o seu Pet</label>
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Almoço incluso na
+                            <input class="form-check-input" type="checkbox" role="switch" id="almoco" name="servicos"
+                                value="3">
+                            <label class="form-check-label" for="almoco">Almoço incluso na
                                 estadia</label>
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Serviços de Massagem</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="massagem" name="servicos"
+                                value="4">
+                            <label class="form-check-label" for="massagem">Serviços de Massagem</label>
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Banheiro full resource</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="banheiro" name="servicos"
+                                value="5">
+                            <label class="form-check-label" for="banheiro">Banheiro full resource</label>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Inserir</button>
+                        <button id="cadastrarServicos" type="button" class="btn btn-primary"
+                            data-bs-dismiss="modal">Inserir</button>
                     </div>
                 </div>
             </div>
@@ -205,8 +215,10 @@
                     </div>
                     <div class="modal-body">
                         ( importar as informações da reserva ) <br>
-                        a) abrir uma modal com as informações da reserva, incluindo o título, foto e descrição da acomodação <br>
-                        b) incluir também o descritivos sobre a quantidade de pessoas, data de check-in, checkout, serviços adicionais <br>
+                        a) abrir uma modal com as informações da reserva, incluindo o título, foto e descrição da
+                        acomodação <br>
+                        b) incluir também o descritivos sobre a quantidade de pessoas, data de check-in, checkout,
+                        serviços adicionais <br>
                         c) descrever valores individuais de cada item e a soma total da reserva <br>
                     </div>
                     <div class="modal-footer">

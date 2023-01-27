@@ -159,7 +159,8 @@ input[type="radio"] {
     line-height: 2rem;
     padding: 1rem;
     position: fixed;
-    top: 35vh;
+    top: 50%;
+    /* transform: translateY(-50%); */
     right: 0;
     border-radius: 10px 0 0 10px;
 }
