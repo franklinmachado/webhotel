@@ -1,0 +1,65 @@
+@use "../sass-utils/variaveis" as v;
+
+$bc1: linear-gradient(hwb(0 100% 0% / 0.815), hsla(0, 0%, 100%, 0.573));
+$bc2: hsla(89, 38%, 15%, 0.895);
+$b-img: url(/images/5332433.jpg) no-repeat;
+
+
+.formulario-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: $bc1, $b-img;
+    background-size: cover;
+
+    .formulario-cadastro {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 35rem;
+        background-color: $bc2;
+        padding: 2em;
+        border-radius: 1em;
+
+        .mensagem-cadastro {
+            font-family: "Satisfy", cursive;
+            font-size: 3.2rem;
+            font-weight: 200;
+            color: #c4972e;
+            text-align: center;
+            line-height: 1em;
+            margin-bottom: 0.8em;
+        }
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0;
+
+            .input-cadastro {
+                padding: 0.6em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                font-style: italic;
+            }
+        }
+
+        .botao-formulario {
+            display: flex;
+            justify-content: center;
+
+            .botaoEscuroMenor {
+                background-color: #c4972e;
+                width: 50%;
+            }
+
+            .botaoEscuroMenor:hover {
+                color: #283618;
+                font-weight: 700;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+
