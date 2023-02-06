@@ -1,168 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../css/style.css" />
-        <link rel="stylesheet" href="../../docs/header/header.css">
-        <link rel="stylesheet" href="../../docs/footer/footer.css">
-        <title>Formulário de Contato</title>
-    </head>
-    <body class="bodyContato">
-        <header>
-            <img
-                class="header__logo"
-                src="../../images/logoColorida.svg"
-                alt=""
-            />
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="../../index.html">Página principal</a></li>
-                            <li><a href="sobre.html">Nosso hotel</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Formulário de Contato</title>
+</head>
+
+<body class="bodyContato">
+    <header class="main__header">
+        <div class="header__logo__container">
+            <img class="header__logo__img" src="../../images/logoColorida.svg" alt="" />
+        </div>
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav>
+                    <ul class="main-navigation">
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        <main class="contato">
-            <div class="contact-form">
+        </div>
+    </header>
+    <main class="contato">
+        <div class="contact-form">
+            <div>
+                <h1>Fale com a gente!<br />Teremos prazer em atendê-lo</h1>
+                <h4>
+                    Este canal é dedicado exclusivamente para que os
+                    visitantes enviem dúvidas, sugestões, reclamações ou
+                    elogios sobre o hotel Montseny. Caso queira realizar sua
+                    reserva <a href="reservas.html"><u>clique aqui.</u></a>
+                </h4>
+            </div>
+            <p class="failure">Ops...a mensagem não pode ser enviada.</p>
+            <p class="success">Mensagem enviada com sucesso. Obrigado!</p>
+
+            <form class="formularioContato" method="post" action="/">
                 <div>
-                    <h1>Fale com a gente!<br />Teremos prazer em atendê-lo</h1>
-                    <h4>
-                        Este canal é dedicado exclusivamente para que os
-                        visitantes enviem dúvidas, sugestões, reclamações ou
-                        elogios sobre o hotel Montseny. Caso queira realizar sua
-                        reserva <a href="reservas.html"><u>clique aqui.</u></a>
-                    </h4>
+                    <input type="text" class="name" name="name" value="" placeholder="Nome completo" required="required"
+                        tabindex="1" autofocus="autofocus" />
+                    </label>
                 </div>
-                <p class="failure">Ops...a mensagem não pode ser enviada.</p>
-                <p class="success">Mensagem enviada com sucesso. Obrigado!</p>
+                <div> <input type="email" class="email" name="email" value="" placeholder="Seu E-mail" tabindex="2"
+                        required="required" />
+                    </label>
+                </div>
+                <div>
+                    <input type="tel" class="telefone" name="telefone" value="" placeholder="Telefone - (DDD) + Número"
+                        tabindex="2" required="required" />
+                    </label>
+                </div>
+                <div>
+                    <select class="assunto" name="assunto" tabindex="4">
+                        <option selected disabled value="">
+                            Selecione
+                        </option>
+                        <option>Cancelamento de Reserva</option>
+                        <option>Ouvidoria</option>
+                        <option>Departamento Financeiro</option>
+                    </select>
+                    </label>
+                </div>
+                <div>
 
-                <form class="formularioContato" method="post" action="/">
-                    <div>
-                                                    <input
-                                type="text"
-                                class="name"
-                                name="name"
-                                value=""
-                                placeholder="Nome completo"
-                                required="required"
-                                tabindex="1"
-                                autofocus="autofocus"
-                            />
-                        </label>
-                    </div>
-                    <div>                                                    <input
-                                type="email"
-                                class="email"
-                                name="email"
-                                value=""
-                                placeholder="Seu E-mail"
-                                tabindex="2"
-                                required="required"
-                            />
-                        </label>
-                    </div>
-                    <div>                                                    
-                            <input
-                                type="tel"
-                                class="telefone"
-                                name="telefone"
-                                value=""
-                                placeholder="Telefone - (DDD) + Número"
-                                tabindex="2"
-                                required="required"
-                            />
-                        </label>
-                    </div>
-                    <div>
-                                                    <select class="assunto" name="assunto" tabindex="4">
-                                <option selected disabled value="">
-                                    Selecione
-                                </option>
-                                <option>Cancelamento de Reserva</option>
-                                <option>Ouvidoria</option>
-                                <option>Departamento Financeiro</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div>
-                        
-                            <textarea
-                                class="message"
-                                name="message"
-                                placeholder="Escreva sua mensagem aqui"
-                                tabindex="5"
-                                required="required"
-                            ></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <button name="submit" type="submit" class="submit">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </main>
+                    <textarea class="message" name="message" placeholder="Escreva sua mensagem aqui" tabindex="5"
+                        required="required"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button name="submit" type="submit" class="submit">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
 
-        <footer>
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <img
-                        class="footer__logo"
-                        src="../../images/logoBranca.svg"
-                        alt=""
-                    />
-                    <nav class="nav_footer">
-                        <ul class="footer__navigation">
-                            <li><a href="../../index.html">Home</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="reservas.html">Reservas</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li>
-                                <a href="../admin/formularioAdmin.html"
-                                    >Administração</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="footer_icons">
-                    <ul class="footer__social">
+    <footer>
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="../../images/logoBranca.svg" alt="" />
+                <nav>
+                    <ul class="footer__navigation">
                         <li>
-                            <a href="#" data-social="facebook"
-                                ><span class="sr-only">Facebook</span></a
-                            >
+                            <a href="../../index.html">Home</a>
                         </li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
                         <li>
-                            <a href="#" data-social="instagram"
-                                ><span class="sr-only">Instagram</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="#" data-social="whatsapp"
-                                ><span class="sr-only">Whatsapp</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="#" data-social="email"
-                                ><span class="sr-only">Email</span></a
-                            >
+                            <a href="../admin/formularioAdmin.html">Administração</a>
                         </li>
                     </ul>
-                    </nav>
-                </div>
-                <span class="copyright"
-                    >&copy Todos os direitos reservados - 2022 - Equipe 3</span
-                >
+                </nav>
+                <nav>
+                    <ul role="list" class="footer__social">
+                        <li>
+                            <a href="#" data-social="facebook"><span class="sr-only">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="instagram"><span class="sr-only">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="whatsapp"><span class="sr-only">Whatsapp</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-social="email"><span class="sr-only">Email</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </footer>
-    </body>
+            <span class="copyright">&copy Todos os direitos reservados - 2022 - Equipe 3</span>
+        </div>
+    </footer>
+</body>
+
 </html>
