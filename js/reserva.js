@@ -55,9 +55,9 @@ quantidadeDePessoas.addEventListener("input", () => {
 
 chales.forEach((chale) => {
     chale.addEventListener("input", () => {
-        const quarto = tiposDeChales.find(el => el.id === Number(chale.value))
-        reserva.quarto = quarto;
-        updateView(reserva);
+        const quarto = tiposDeChales.find((el) => el.id === Number(chale.value))
+        reserva.quarto = quarto
+        updateView(reserva)
         sendReservaToLocalStorage(reserva)
     })
 })
@@ -87,9 +87,9 @@ function updateModal(reserva) {
 }
 
 function totalDeDias(checkIn, checkOut) {
-    const diferencaEmMs = new Date(checkOut) - new Date(checkIn);
-    const diferencaEmDias = diferencaEmMs / (1000 * 60 * 60 * 24);
-    return diferencaEmDias;
+    const diferencaEmMs = new Date(checkOut) - new Date(checkIn)
+    const diferencaEmDias = diferencaEmMs / (1000 * 60 * 60 * 24)
+    return diferencaEmDias
 }
 
 function formatDate(date) {
