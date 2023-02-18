@@ -1,134 +1,72 @@
-
-.flex-container{
-    display: flex;
-
+/* 10px - 12px */
+/* 12px - 14px */
+/* 14px - 16px */
+/* 16px - 18px */
+/* 20px - 24px */
+/* 28px - 32px */
+/* 32px- 40px*/
+/* 40px - 48px */
+.flex-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.flex-container .formulario-container h2 {
+  margin-bottom: 3rem;
+}
+.flex-container .formulario-container .input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.flex-container .formulario-container .input-container input {
+  border: none;
+  border-bottom: 1px solid #606c38;
+}
+.flex-container .formulario-container .botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.flex-container .formulario-container .links {
+  color: #283618;
+  font-weight: 600;
+  text-decoration: none;
+}
+.flex-container .formulario-container .links:hover {
+  color: #606c38;
+}
+.flex-container .imagem-login {
+  width: 100%;
 }
 
-.formulario-container{
-    display: flex;
-    flex: 2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.formulario{
-    width: 80%;
-    max-width: 400px;
-}
-
-.formulario h2{
-    margin-bottom: 3rem;
-}
-
-
-.input-container{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-
-.input-container input{
-    border:none;
-    border-bottom: 1px solid var(--cor-secundaria);
-}
-
-
-.botoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-}
-.links{
-    color: #283618;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-
-.links:hover{
-    color: #606c38;
-}
-
-
-
-@media (max-width: 1194px) and (orientation: landscape) {
-
-    .formulario-container{
-        padding: 2em;
-        width: 50%;  
-    }
-
-    .imagem{
-        width: 50%;
-    }
-
-    footer{
-        overflow: hidden; 
-    }
-}
-
+/*tablet*/
 @media (max-width: 1024px) and (orientation: portrait) {
-    .formulario-container{
-        padding: 2em;
-        width: 50%;
-    }
-
-    .imagem{
-        width: 50%;
-    }
+  .flex-container {
+    display: block;
+  }
+  .formulario-container {
+    padding: 2rem;
+  }
 }
-
-
 /*mobile*/
-
 @media (max-width: 915px) and (orientation: landscape) {
-    .flex-container{
+  .flex-container {
     display: block;
+  }
+  .formulario-container {
+    padding: 2rem;
+  }
 }
-.formulario-container{
-    padding: 3em;
-    width: 100%;
-}
-
-.imagem{
-    display: none;
-}
-}
-
 @media (max-width: 414px) and (orientation: portrait) {
-    .flex-container{
+  .flex-container {
     display: block;
-}
-.formulario-container{
-    padding: 3em;
-    width: 100%;
-}
-
-.imagem{
+  }
+  .imagem-login {
     display: none;
+  }
 }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=login.css.map */

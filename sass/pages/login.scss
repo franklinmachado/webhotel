@@ -1,0 +1,83 @@
+@use "../sass-utils/variaveis" as v;
+
+.flex-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    .formulario-container {
+       
+
+        h2 {
+            margin-bottom: 3rem;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            input {
+                border: none;
+                border-bottom: 1px solid v.$cor-secundaria;
+            }
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .links {
+            color: #283618;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .links:hover {
+            color: #606c38;
+        }
+    }
+
+    .imagem-login {
+        width: 100%;
+    }
+}
+
+/*tablet*/
+@media (max-width: 1194px) and (orientation: landscape) {
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .flex-container {
+        display: block;
+    }
+
+    .formulario-container {
+        padding: 2rem;
+    }
+}
+
+/*mobile*/
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .flex-container {
+        display: block;
+    }
+
+     .formulario-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .flex-container {
+        display: block;
+    }
+
+    .imagem-login {
+        display: none;
+    }
+}

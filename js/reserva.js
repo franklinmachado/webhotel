@@ -7,11 +7,20 @@ const modalQuarto = document.querySelector("#quarto")
 const modalCheckIn = document.querySelector("#checkIn")
 const modalCheckOut = document.querySelector("#checkOut")
 const modalQtdPessoas = document.querySelector("#qtdPessoas")
+const modalTotal = document.querySelector("#total")
 
 const tiposDeChales = [
     { id: 1, tipo: "Ofurô", valor: 100 },
-    { id: 2, tipo: "Master", valor: 100 },
-    { id: 3, tipo: "Luxo Familia", valor: 100 },
+    { id: 2, tipo: "Master", valor: 150 },
+    { id: 3, tipo: "Luxo Familia", valor: 200 },
+]
+
+const servicos = [
+    { id: 1, tipo: "cofre", valor: 20 },
+    { id: 2, tipo: "pet", valor: 30 },
+    { id: 3, tipo: "almoco", valor: 40 },
+    { id: 4, tipo: "massagem", valor: 50 },
+    { id: 5, tipo: "banheiro", valor: 60 },
 ]
 
 let reserva = {
@@ -22,6 +31,7 @@ let reserva = {
         tipo: null,
         valor: 0,
     },
+    servicos: [],
     totalDeDias: 0,
     total: 0,
 }
@@ -67,6 +77,9 @@ function sendReservaToLocalStorage(reserva) {
 }
 
 function updateView(reserva) {
+    // ! tirar daqui
+    
+
     checkIn.value = reserva.checkIn
     checkOut.value = reserva.checkOut
     quantidadeDePessoas.value = reserva.quantidadeDePessoas
@@ -76,6 +89,7 @@ function updateView(reserva) {
         }
     })
 
+
     updateModal(reserva)
 }
 
@@ -84,6 +98,7 @@ function updateModal(reserva) {
     modalCheckIn.textContent = formatDate(reserva.checkIn)
     modalCheckOut.textContent = formatDate(reserva.checkOut)
     modalQtdPessoas.textContent = reserva.quantidadeDePessoas
+    modalTotal.textContent = reserva.total;
 }
 
 function totalDeDias(checkIn, checkOut) {
@@ -97,3 +112,37 @@ function formatDate(date) {
         timeZone: "UTC",
     }).format(new Date(date))
 }
+
+function getTotal(reserva) {
+    let total = 0;
+    let valorServicos = 0;
+    const dias = reserva.totalDeDias;
+    const valorQuarto = reserva.quarto.valor;
+    if(reserva.servicos.length > 0) {
+        valorServicos = reserva.servicos.reduce((accumulator, { valor }) => accumulator + valor, 0);
+    }
+    total = (valorQuarto * dias) + valorServicos;
+    return total;
+}
+
+const myModal = document.getElementById('exampleModal')
+const cadastrarServicos = document.getElementById("cadastrarServicos")
+const inputsServicos = document.querySelectorAll("input[name=servicos]")
+
+// myModal.addEventListener('shown.bs.modal', () => {
+    
+// })
+
+cadastrarServicos.addEventListener("click", () => {
+    
+    inputsServicos.forEach((input) => {
+        if(input.checked) {
+            const servico = servicos.find(el => el.id == input.value);
+            reserva.servicos.push(servico);
+        }
+    })
+    reserva.total = getTotal(reserva);
+    updateView(reserva)
+    sendReservaToLocalStorage(reserva);
+})
+

@@ -1,0 +1,88 @@
+.formulario-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+
+    background: linear-gradient(
+            hwb(0 100% 0% / 0.815),
+            hsla(0, 0%, 100%, 0.573)
+        ),
+        url(/images/5332433.jpg) no-repeat;
+    background-size: cover;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.formulario-cadastro{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 35rem;
+    background-color: hsla(89, 38%, 15%, 0.895);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.mensagemCadastro{
+    font-family: "Satisfy", cursive;
+    font-size: 3.2rem;
+    font-weight: 200;
+    color: #c4972e;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 0.8em;
+}
+.input-container{
+    padding: 0.5em 0;
+}
+
+.input-container input{
+    padding: 0.6em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    font-style: italic;
+}
+
+
+.botaoEscuroMenor{
+    background-color: #c4972e;
+    text-decoration: none;
+    width: 50%;
+}
+
+.botaoEscuroMenor:hover{
+    color: #283618;
+    font-weight: 700;
+    transition:1s;
+}
+
+@media (max-width: 1194px) and (orientation: landscape) {
+ .formulario-container{
+    align-items: center;
+    width: 100%;
+ }
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+ .formulario-container{
+    align-items: center;
+    width: 100%;
+ }
+}
+
+/*mobile*/
+
+@media (max-width: 915px) and (orientation: landscape) {
+   .formulario-cadastro{
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .formulario-cadastro{
+        width: 100%;
+    }
+}
+
