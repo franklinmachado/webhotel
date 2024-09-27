@@ -1,218 +1,135 @@
 .bodyContato {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: Montserrat, arial, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Montserrat", arial, sans-serif;
 }
 
 .contato {
-    padding: 2em;
-    display: block;
-    color: #c0c0c0;
-    background: linear-gradient(
-            hwb(0 100% 0% / 0.914),
-            hsla(0, 0%, 100%, 0.573)
-        ),
-        url(../images/5332433.jpg) no-repeat;
-    background-size: cover;
-
-    background-color: rgba(0, 0, 0, 0);
+  padding: 0.5em;
+  display: block;
+  background: linear-gradient(hwb(0 100% 0%/0.914), hsla(0deg, 0%, 100%, 0.573)), url(../images/5332433.jpg) no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-/* Contact Form Styles */
-h1 {
-    text-align: center;
-    margin: 10px 0 0 0;
-}
-h4 {
-    color: #fff;
-    font-weight: 300;
-    padding: 1em;
-    font-size: 1.2em;
-    line-height: 1.4;
-    text-align: center;
-    margin: 0 0 20px 0;
+.contato h1 {
+  text-align: center;
+  margin: 10px 0 0 0;
 }
 
-h4 a {
-    color: #f9af15;
+.contato h4 {
+  color: white;
+  font-weight: 300;
+  padding: 1em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
+
+.contato h4 a {
+  color: #c4972e;
+}
+
 .contact-form {
-    background-color: hsla(89, 38%, 15%, 0.895);
-    padding: 2em;
-    max-width: 38em;
-    margin: auto;
-    border-radius: 2em;
-    -webkit-border-radius: 2em;
-    -moz-border-radius: 2em;
+  background-color: hsla(89deg, 38%, 15%, 0.895);
+  padding: 2em;
+  max-width: 38em;
+  margin: auto;
+  border-radius: 2em;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.contato input::-webkit-outer-spin-button,
+.contato input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type="number"] {
-    -moz-appearance: textfield;
+.contato input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea,
 .contact-form label {
-    font-size: 1em;
-    margin-bottom: 1em;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    padding: 0.5em;
-    box-sizing: border-box;
-    padding-inline: 0.5em 0;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    border: 0;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 0.3em;
-    margin-bottom: 1em;
-    font-style: italic;
+  padding: 0.5em;
+  box-sizing: border-box;
+  padding-inline: 0.5em 0;
+  width: 100%;
+  background: white;
+  border: 0;
+  margin-bottom: 1em;
+  font-style: italic;
+  border-radius: 1.4rem;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-    background-color: #fff7e4;
+  background-color: #eddbb3;
 }
+
 .contact-form textarea {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 }
-.contact-form button[type="submit"] {
-    margin: 1em 25%;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: block;
-    justify-content: center;
-    width: 50%;
-    border: none;
-    background: #c4972e;
-    color: #fff;
-    padding: 0.5em;
-    border-radius: 5em;
+
+.contact-form button[type=submit] {
+  margin: 1em 25%;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  width: 50%;
+  border: none;
+  background: #c4972e;
+  color: white;
+  padding: 0.5em;
+  border-radius: 1.4rem;
 }
-.contact-form button[type="submit"]:hover {
-    color: #283618;
-    font-weight: 700;
-    background-color: #fadea3;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
+
+.contact-form button[type=submit]:hover {
+  color: #eddbb3;
+  font-weight: 700;
+  background-color: #283618;
+  border-radius: 1.4rem;
 }
-.contact-form button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+
+.contact-form button[type=submit]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form .required {
-    font-weight: 600;
-    line-height: 1.5;
-    color: #e5e6e7;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #c4972e;
 }
 
-/* Hide success/failure message
-   (especially since the php is missing) */
 .failure,
 .success {
-    color: #6ea070;
-    display: none;
+  color: #6ea070;
+  display: none;
 }
-
-/* Make form look nice on smaller screens */
 
 @media (max-width: 1194px) {
-    .contact-form {
-    }
-
-    h1 {
-        text-align: center;
-
-        font-size: 1.5em;
-    }
-    h4 {
-        color: #fff;
-        font-weight: 400;
-        padding: 1em;
-        font-size: 1em;
-        line-height: 1.4;
-        text-align: center;
-        margin: 0 0 20px 0;
-    }
+  h1 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px 0 0 0;
+  }
 }
 
-@media (max-width: 1024px) {
-    .contact-form {
-    }
-
-    h1 {
-        text-align: center;
-
-        font-size: 1.5em;
-    }
-    h4 {
-        color: #fff;
-        font-weight: 400;
-        padding: 1em;
-        font-size: 1em;
-        line-height: 1.4;
-        text-align: center;
-        margin: 0 0 20px 0;
-    }
-}
-
-@media (max-width: 915px) {
-    .contact-form {
-    }
-
-    h1 {
-        text-align: center;
-
-        font-size: 1.5em;
-    }
-    h4 {
-        color: #fff;
-        font-weight: 400;
-        padding: 1em;
-        font-size: 1em;
-        line-height: 1.4;
-        text-align: center;
-        margin: 0 0 20px 0;
-    }
-}
-
-@media (max-width: 414px) {
-    main .contato {
-        margin: auto;
-    }
-    #contact-form {
-    }
-
-    h1 {
-        text-align: center;
-
-        font-size: 1.2em;
-    }
-    h4 {
-        color: #fff;
-        font-weight: 400;
-        padding: 1em;
-        font-size: 1em;
-        line-height: 1.4;
-        text-align: center;
-        margin: 0 0 20px 0;
-    }
-}
+/*# sourceMappingURL=contato.css.map */
